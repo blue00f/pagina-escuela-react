@@ -57,17 +57,23 @@ const sections = [
   },
 ];
 
-function Sidebar({handleLogout}) {
+function Sidebar({ isLoggedIn, handleLogout, username }) {
   return (
     <div className="sidebar-container">
       <SidebarTop />
       <div className="container-button-login">
-        <Link to="login" className="btn btn-primary">
-          Iniciar sesión
-        </Link>
-        <button className="btn btn-primary"  onClick={handleLogout}>
-        Cerrar sesión
-      </button>
+        {isLoggedIn ? (
+          <div className="user-info">
+            <p>Bienvenido, {username}</p>
+            <button className="btn btn-primary" onClick={handleLogout}>
+              Cerrar sesión
+            </button>
+          </div>
+        ) : (
+          <Link to="login" className="btn btn-primary">
+            Iniciar sesión
+          </Link>
+        )}
       </div>
       <nav className="container-items">
         <ul className="items">

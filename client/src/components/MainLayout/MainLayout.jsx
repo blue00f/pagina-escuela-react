@@ -22,6 +22,7 @@ import './LoginButton.css';
 
 function MainLayout() {
   const navigate = useNavigate();
+  const [username, setUsername] = useState('');  
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [hasRedirected, setHasRedirected] = useState(false);
   const [isLaptopResolution, setIsLaptopResolution] = useState(
@@ -66,7 +67,7 @@ function MainLayout() {
     
         <Route exact path="/" element={<Inicio />} />
         <Route exact path="/login" element={<LoginLayout isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
-        
+
         <Route exact path="/PublicacionesSL" element={isLoggedIn ? <PublicacionesCL /> : <PublicacionesSL />} />
         <Route exact path="/PublicacionesCL" element={isLoggedIn ? <PublicacionesCL /> : <PublicacionesSL />} />
         <Route exact path="/nuestra-historia" element={<NuestraHistoria />} />
@@ -80,9 +81,8 @@ function MainLayout() {
         <Route exact path="*" element={<NotFound />} />
       </Routes>
 
-      <Sidebar handleLogout = {handleLogout}/>
-
-      <SidebarResponsive handleLogout = {handleLogout}/>
+      <Sidebar isLoggedIn={isLoggedIn} handleLogout={handleLogout} username={username} />
+      <SidebarResponsive isLoggedIn={isLoggedIn} handleLogout={handleLogout} username={username} />
 
       <Footer />
     </div>

@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './LoginLayout.css';
 import {useState} from 'react';
+import Swal from 'sweetalert2';
 
 
 function LoginLayout({isLoggedIn, setIsLoggedIn}) {
@@ -37,12 +38,26 @@ function LoginLayout({isLoggedIn, setIsLoggedIn}) {
       const data = await response.json();
   
       if (response.ok) {
-        setIsLoggedIn(true)
+       
+        
+          Swal.fire({
+            icon: 'success',
+            title: 'Inicio de Sesión Exitoso',
+            text: data.message,
+          });
+          setIsLoggedIn(true);
+          setMessage(data.message);
+          setUsername(data.username);
          
-        setMessage(data.message)
       }
       else {
-        throw new Error(data.error || 'Error en la solicitud');
+        Swal.fire({
+          icon: 'error',
+          title: 'Inicio de Sesión Fallido',
+          text: data.message,
+        });
+        setIsLoggedIn(false);
+        setMessage(data.message);
         
       }
       setMessage(data.message); // Actualiza el estado del mensaje con la respuesta del servidor
