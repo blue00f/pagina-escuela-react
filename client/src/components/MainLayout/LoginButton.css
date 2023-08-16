@@ -1,13 +1,13 @@
 .container-button-login {
   position: absolute;
-  right: 1.5rem;
-  margin-top: 1.4rem;
+  right: 4rem;
+  margin-top: 2rem;
   
 }
 
 .container-button-login > a, 
 .container-button-login > button {
-  width: 6rem;
+  width: 8rem;
   border: none;
   background-color: #2b0c5a;
   margin-right: 0.5rem;
@@ -44,4 +44,6 @@
     margin-right: 0.5rem;
    
 }
+
+ 
 }

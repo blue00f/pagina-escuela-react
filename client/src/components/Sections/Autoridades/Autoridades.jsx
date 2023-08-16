@@ -10,17 +10,17 @@ function Autoridades() {
         <CardAutoridad
           foto={'./fotoUser.webp'}
           cargo={'Regente'}
-          nombre={'Fereyra'}
+          nombre={'Ferreyra'}
         />
         <CardAutoridad
           foto={'./fotoUser.webp'}
-          cargo={'PUTAZO'}
-          nombre={'HIRIJOYEN'}
+          cargo={'Preceptor'}
+          nombre={'Irigoyen'}
         />
         <CardAutoridad
           foto={'./fotoUser.webp'}
           cargo={'Regente'}
-          nombre={'Fereyra'}
+          nombre={'Ferreyra'}
         />
       </div>
       <div className="contenedor-imagenes">
@@ -31,8 +31,8 @@ function Autoridades() {
         />
         <CardAutoridad
           foto={'./fotoUser.webp'}
-          cargo={'PUTAZO'}
-          nombre={'HIRIJOYEN'}
+          cargo={'Preceptor'}
+          nombre={'Irigoyen'}
         />
         <CardAutoridad
           foto={'./fotoUser.webp'}

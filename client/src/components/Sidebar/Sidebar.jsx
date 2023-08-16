@@ -34,7 +34,7 @@ const sections = [
     subsections: [
       { label: 'Nuestra historia', url: 'nuestra-historia' },
       { label: 'Autoridades', url: 'autoridades' },
-      { label: 'Galería', url: 'galeria' },
+      // { label: 'Galería', url: 'galeria' },
       { label: 'Inscripciones', url: 'inscripciones' },
     ],
   },
@@ -57,24 +57,25 @@ const sections = [
   },
 ];
 
-function Sidebar({ isLoggedIn, handleLogout, username }) {
+function Sidebar({ isLoggedIn, handleLogout  }) {
   return (
     <div className="sidebar-container">
       <SidebarTop />
-      <div className="container-button-login">
+      
         {isLoggedIn ? (
-          <div className="user-info">
-            <p>Bienvenido, {username}</p>
+          <div className="container-button-login"> 
             <button className="btn btn-primary" onClick={handleLogout}>
               Cerrar sesión
             </button>
           </div>
         ) : (
+          <div className="container-button-login">
           <Link to="login" className="btn btn-primary">
             Iniciar sesión
           </Link>
+          </div>
         )}
-      </div>
+     
       <nav className="container-items">
         <ul className="items">
           {sections.map((section, index) => (

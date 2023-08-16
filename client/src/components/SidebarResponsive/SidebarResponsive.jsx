@@ -10,7 +10,7 @@ import {
 } from '../Icons/Icons.jsx';
 import './SidebarResponsive.css';
 
-function SidebarResponsive({isLoggedIn,handleLogout,username}) {
+function SidebarResponsive({isLoggedIn,handleLogout }) {
   return (
     <div className="header">
       <button
@@ -28,20 +28,22 @@ function SidebarResponsive({isLoggedIn,handleLogout,username}) {
           ESCUELA TÉCNICA DOLORES LAVALLE DE LAVALLE 
         </p>
       </Link>
-      <div className="container-button-login">
+       
         {isLoggedIn ? (
-          <div className="user-info-responsive">
-            <p>Bienvenido, {username}</p>
+          <div className="container-button-login">
+           
             <button className="btn btn-primary" onClick={handleLogout}>
               Cerrar sesión
             </button>
           </div>
         ) : (
+          <div className="container-button-login">
           <Link to="login" className="btn btn-primary">
             Iniciar sesión
           </Link>
+          </div>
         )}
-      </div>
+      
       <div
         className="offcanvas offcanvas-start"
         data-bs-scroll="true"
@@ -96,14 +98,14 @@ function SidebarResponsive({isLoggedIn,handleLogout,username}) {
                       Autoridades
                     </Link>
                   </li>
-                  <li className="fondo">
+                  {/* <li className="fondo">
                     <Link
                       className="subitem texto-semibold texto-violeta"
                       to="galeria"
                     >
                       Galería
                     </Link>
-                  </li>
+                  </li> */}
                   <li className="fondo">
                     <Link
                       className="subitem texto-semibold texto-violeta"
