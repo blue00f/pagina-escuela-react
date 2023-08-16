@@ -60,8 +60,6 @@ function MainLayout() {
     <div className="grid-container">
       {isLaptopResolution ? <SidebarResponsive /> : <Sidebar />}
       <RenderRedirectToPublicacionesCL isLoggedIn={isLoggedIn} />
-       
-       
 
       <Routes>
     

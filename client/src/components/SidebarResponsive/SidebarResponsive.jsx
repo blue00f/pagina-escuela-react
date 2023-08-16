@@ -98,14 +98,14 @@ function SidebarResponsive({isLoggedIn,handleLogout }) {
                       Autoridades
                     </Link>
                   </li>
-                  {/* <li className="fondo">
+                  <li className="fondo">
                     <Link
                       className="subitem texto-semibold texto-violeta"
                       to="galeria"
                     >
                       Galería
                     </Link>
-                  </li> */}
+                  </li>
                   <li className="fondo">
                     <Link
                       className="subitem texto-semibold texto-violeta"

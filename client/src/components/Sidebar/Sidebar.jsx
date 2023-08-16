@@ -34,7 +34,7 @@ const sections = [
     subsections: [
       { label: 'Nuestra historia', url: 'nuestra-historia' },
       { label: 'Autoridades', url: 'autoridades' },
-      // { label: 'Galería', url: 'galeria' },
+      { label: 'Galería', url: 'galeria' },
       { label: 'Inscripciones', url: 'inscripciones' },
     ],
   },

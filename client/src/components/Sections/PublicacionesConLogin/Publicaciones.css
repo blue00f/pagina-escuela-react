@@ -56,6 +56,13 @@
   font-size: 22px;
 }
 
+.container-buttons{
+  display: flex;
+  flex-direction: row;
+   
+  justify-content: center;
+}
+
 .container-add-delete {
 
   margin: 0px auto;
@@ -65,7 +72,12 @@
   border-radius: 10px;
   padding: 1rem;
   background-color: #fff;
-  width: 8rem;
+  width: 9.3rem;
+}
+
+.container-add-delete:nth-of-type(1){
+  width: 8.2rem;
+
 }
 
 .container-add-delete > svg,
@@ -73,6 +85,31 @@
   margin-right: 1rem;
   font-size: 1.2rem;
 }
+
+.tab-container >button{
+  width: 8rem;
+  border: none;
+  background-color: #ffffff;
+  margin-right: 0.5rem;
+   
+}
+.tab-container > button:hover {
+  background-color: #4d169f;
+}
+
+.button-tab{
+  border-radius: 0px 0px 10px 10px ;
+  color: #4d169f;
+  font-weight: 600;
+}
+.hidden{
+  display: none;
+}
+.hidden-post {
+ 
+  opacity: 0.6;  
+}
+ 
 
 div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
   background-color: #2b0c5a !important;

@@ -10,6 +10,7 @@ create table users(
 
 create table posts(
 	idPost int auto_increment not null,
+    hidden boolean default false,
     title varchar(100) not null,
     content varchar(255) not null,
     dateUploaded datetime default now(),

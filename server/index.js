@@ -77,6 +77,22 @@ app.post('/login', (req, res) => {
     }
   });
 });
+
+app.put('/publicaciones/:id', (req, res) => {
+  const postId = req.params.id;
+  const { hidden } = req.body; // Asegúrate de que estás obteniendo el campo hidden del cuerpo de la solicitud
+
+  const sql = 'UPDATE posts SET hidden = ? WHERE idPost = ?';
+  connection.query(sql, [hidden, postId], (err, result) => {
+    if (err) {
+      console.error('Error al ocultar/mostrar la publicación en la base de datos', err);
+      res.status(500).json({ error: 'Error al ocultar/mostrar la publicación en la base de datos' });
+    } else {
+      res.json({ message: 'Publicación ocultada/mostrada correctamente' });
+    }
+  });
+});
+
  
 const port = 3001
 app.listen(port, () => {
