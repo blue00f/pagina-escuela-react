@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import Swal from 'sweetalert2';
 import CardPublicacion from '../../CardPublicacion/CardPublicacion';
-import { AddPostIcon } from '../../Icons/Icons.jsx';
 import './Publicaciones.css';
 
 function PublicacionesCL() {
@@ -9,21 +8,19 @@ function PublicacionesCL() {
   const [shouldFetch, setShouldFetch] = useState(false);
 
   useEffect(() => {
-     
-      fetch('http://localhost:3001/publicaciones')
-        .then((res) => res.json())
-        .then((data) => {
-          setPublicaciones(data);
-          setShouldFetch(false); // Restablecer el estado para que no se ejecute nuevamente
-        })
-        .catch((error) => {
-          console.error('Error al obtener las publicaciones: ', error);
-        });
-    
-  }, [ ]);
+    fetch('http://localhost:3001/posts')
+      .then((res) => res.json())
+      .then((data) => {
+        setPublicaciones(data);
+        setShouldFetch(false); // Restablecer el estado para que no se ejecute nuevamente
+      })
+      .catch((error) => {
+        console.error('Error al obtener las publicaciones: ', error);
+      });
+  }, []);
   useEffect(() => {
     if (shouldFetch) {
-      fetch('http://localhost:3001/publicaciones')
+      fetch('http://localhost:3001/posts')
         .then((res) => res.json())
         .then((data) => {
           setPublicaciones(data);
@@ -60,7 +57,7 @@ function PublicacionesCL() {
           return;
         }
 
-        fetch('http://localhost:3001/publicaciones', {
+        fetch('http://localhost:3001/posts', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -77,7 +74,6 @@ function PublicacionesCL() {
             }
           })
           .then((data) => {
-            
             console.log(data.message);
             setPublicaciones((prevPublicaciones) =>
               prevPublicaciones.concat({
@@ -94,7 +90,6 @@ function PublicacionesCL() {
           });
       }
     });
- 
   };
 
   const handleEditPost = (publicacion) => {
@@ -127,7 +122,7 @@ function PublicacionesCL() {
           return;
         }
 
-        fetch(`http://localhost:3001/publicaciones/${publicacion.idPost}`, {
+        fetch(`http://localhost:3001/posts/${publicacion.idPost}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
@@ -138,7 +133,9 @@ function PublicacionesCL() {
             if (response.ok) {
               return response.json();
             } else {
-              throw new Error('Error al editar la publicación: ' + response.statusText);
+              throw new Error(
+                'Error al editar la publicación: ' + response.statusText
+              );
             }
           })
           .then((data) => {
@@ -146,7 +143,9 @@ function PublicacionesCL() {
             // Actualizar el estado local de publicaciones para reflejar la edición.
             setPublicaciones((prevPublicaciones) =>
               prevPublicaciones.map((pub) =>
-                pub.idPost === publicacion.idPost ? { ...pub, title, content } : pub
+                pub.idPost === publicacion.idPost
+                  ? { ...pub, title, content }
+                  : pub
               )
             );
           })
@@ -160,7 +159,7 @@ function PublicacionesCL() {
   const handleHidePost = (postId, isHidden) => {
     const newHiddenState = !isHidden;
 
-    fetch(`http://localhost:3001/publicaciones/${postId}`, {
+    fetch(`http://localhost:3001/posts/${postId}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -171,12 +170,14 @@ function PublicacionesCL() {
         if (response.ok) {
           return response.json();
         } else {
-          throw new Error('Error al ocultar/mostrar la publicación: ' + response.statusText);
+          throw new Error(
+            'Error al ocultar/mostrar la publicación: ' + response.statusText
+          );
         }
       })
       .then((data) => {
         console.log(data.message);
-         
+
         setPublicaciones((prevPublicaciones) =>
           prevPublicaciones.map((pub) =>
             pub.idPost === postId ? { ...pub, hidden: newHiddenState } : pub
@@ -187,50 +188,49 @@ function PublicacionesCL() {
         console.error('Error al ocultar/mostrar la publicación:', error);
       });
   };
- 
+
   return (
     <section className="content-container">
-    <div className="contenedor-titulo">
-      <h2 className="titulo-seccion">Publicaciones</h2>
-    </div>
-    <div className="container-buttons">
+      <div className="contenedor-titulo">
+        <h2 className="titulo-seccion">Publicaciones</h2>
+      </div>
+      <div className="container-buttons">
+        <button className="container-add-delete" onClick={handleAddPostClick}>
+          <p className="texto-violeta texto-semibold">Nueva publicación</p>
+        </button>
+      </div>
+      <div className="contenedor-grid">
+        {publicaciones.map((publicacion, index) => (
+          <div
+            key={index}
+            className={`${publicacion.hidden ? 'hidden-post' : ''}`}
+          >
+            <CardPublicacion
+              title={publicacion.title}
+              content={publicacion.content}
+              dateUploaded={publicacion.dateUploaded}
+            />
 
-    <button className="container-add-delete" onClick={handleAddPostClick}>
-      <p className="texto-violeta texto-semibold">Nueva publicación</p>
-    </button>
-       
-    </div>
-    <div className="contenedor-grid">
-    {publicaciones.map((publicacion, index) => (
-        
-
-        <div key={index}  className={`${
-          publicacion.hidden ? 'hidden-post' : '' }`}>
-          
-          <CardPublicacion
-            
-            title={publicacion.title}
-            content={publicacion.content}
-            dateUploaded={publicacion.dateUploaded}
-          />
-           
-          <div className="tab-container">
-            <button className="btn btn-primary button-tab  " onClick={() => handleEditPost(publicacion)}>
-              Modificar
-            </button>
-            <button
-              className="btn btn-primary button-tab"
-              onClick={() => handleHidePost(publicacion.idPost , publicacion.hidden)}
-            >
-              {publicacion.hidden ? 'Mostrar' : 'Ocultar'}
-            </button>
-            
+            <div className="tab-container">
+              <button
+                className="btn btn-primary button-tab  "
+                onClick={() => handleEditPost(publicacion)}
+              >
+                Modificar
+              </button>
+              <button
+                className="btn btn-primary button-tab"
+                onClick={() =>
+                  handleHidePost(publicacion.idPost, publicacion.hidden)
+                }
+              >
+                {publicacion.hidden ? 'Mostrar' : 'Ocultar'}
+              </button>
+            </div>
           </div>
-        </div>
-         
-      ))}
-    </div>
-  </section>
+        ))}
+      </div>
+    </section>
   );
 }
 
