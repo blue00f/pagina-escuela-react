@@ -149,19 +149,41 @@ export function RectangleIcon() {
   );
 }
 
-export function ArrowCarouselRight() {
+export function ArrowCarouselLeft() {
   return (
-    <div>
-      <span className="iconCarrousel arrowRight" aria-hidden="true"></span>
-    </div>
+    <span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="80"
+        height="80"
+        viewBox="0 0 20 20"
+      >
+        <circle cx="10" cy="10" r="10" fill="#4d169f" />
+        <path
+          d="M10 20A10 10 0 1 0 0 10a10 10 0 0 0 10 10zm1.289-15.7 1.422 1.4-4.3 4.344 4.289 4.245-1.4 1.422-5.714-5.648"
+          fill="currentColor"
+        />
+      </svg>
+    </span>
   );
 }
 
-export function ArrowCarouselLeft() {
+export function ArrowCarouselRight() {
   return (
-    <div>
-      <span className="iconCarrousel arrowLeft" aria-hidden="true"></span>
-    </div>
+    <span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="80"
+        height="80"
+        viewBox="0 0 20 20"
+      >
+        <circle cx="10" cy="10" r="10" fill="#4d169f" />
+        <path
+          d="M10 20A10 10 0 1 0 0 10a10 10 0 0 0 10 10zM8.711 4.3l5.7 5.766L8.7 15.711l-1.4-1.422 4.289-4.242-4.3-4.347"
+          fill="currentColor"
+        />
+      </svg>
+    </span>
   );
 }
 
