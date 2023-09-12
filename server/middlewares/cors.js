@@ -2,7 +2,8 @@ import cors from 'cors';
 
 const ACCEPTED_ORIGINS = [
   'http://localhost:5173',
-  'https://pagina-escuela-react-production.up.railway.app/',
+  'https://pagina-escuela-react-production.up.railway.app',
+  'https://pagina-escuela-react.vercel.app',
 ];
 
 export const corsMiddleware = ({ acceptedOrigins = ACCEPTED_ORIGINS } = {}) =>

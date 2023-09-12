@@ -4,7 +4,7 @@ import CardPublicacion from '../../CardPublicacion/CardPublicacion';
 import './Publicaciones.css';
 
 // const URL_LOCAL = 'http://localhost:3001/posts';
-const URL_POSTS = 'https://pagina-escuela-react-production.up.railway.app/';
+const URL_POSTS = 'https://pagina-escuela-react-production.up.railway.app';
 
 function PublicacionesCL() {
   const [publicaciones, setPublicaciones] = useState([]);

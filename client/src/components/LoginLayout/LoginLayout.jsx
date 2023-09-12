@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Swal from 'sweetalert2';
 
 // const URL_LOCAL = 'http://localhost:3001/posts';
-const URL_POSTS = 'https://pagina-escuela-react-production.up.railway.app/';
+const URL_POSTS = 'https://pagina-escuela-react-production.up.railway.app';
 
 function LoginLayout({ isLoggedIn, setIsLoggedIn }) {
   const [Username, setUsername] = useState('');
