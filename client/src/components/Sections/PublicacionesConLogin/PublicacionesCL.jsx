@@ -3,12 +3,15 @@ import Swal from 'sweetalert2';
 import CardPublicacion from '../../CardPublicacion/CardPublicacion';
 import './Publicaciones.css';
 
+// const URL_LOCAL = 'http://localhost:3001/posts';
+const URL_POSTS = 'https://pagina-escuela-react-production.up.railway.app/';
+
 function PublicacionesCL() {
   const [publicaciones, setPublicaciones] = useState([]);
   const [shouldFetch, setShouldFetch] = useState(false);
 
   useEffect(() => {
-    fetch('http://localhost:3001/posts')
+    fetch(`${URL_POSTS}/posts`)
       .then((res) => res.json())
       .then((data) => {
         setPublicaciones(data);
@@ -20,7 +23,7 @@ function PublicacionesCL() {
   }, []);
   useEffect(() => {
     if (shouldFetch) {
-      fetch('http://localhost:3001/posts')
+      fetch(`${URL_POSTS}/posts`)
         .then((res) => res.json())
         .then((data) => {
           setPublicaciones(data);
@@ -57,7 +60,7 @@ function PublicacionesCL() {
           return;
         }
 
-        fetch('http://localhost:3001/posts', {
+        fetch(`${URL_POSTS}/posts`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -122,7 +125,7 @@ function PublicacionesCL() {
           return;
         }
 
-        fetch(`http://localhost:3001/posts/${publicacion.idPost}`, {
+        fetch(`${URL_POSTS}/posts/${publicacion.idPost}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
@@ -159,7 +162,7 @@ function PublicacionesCL() {
   const handleHidePost = (postId, isHidden) => {
     const newHiddenState = !isHidden;
 
-    fetch(`http://localhost:3001/posts/${postId}`, {
+    fetch(`${URL_POSTS}/posts/${postId}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',

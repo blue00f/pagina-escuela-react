@@ -2,13 +2,14 @@ import { useState, useEffect } from 'react';
 import CardPublicacion from '../../CardPublicacion/CardPublicacion';
 import './Publicaciones.css';
 
-const URL_POSTS = 'http://localhost:3001/posts';
+// const URL_LOCAL = 'http://localhost:3001/posts';
+const URL_POSTS = 'https://pagina-escuela-react-production.up.railway.app/';
 
 function PublicacionesSL() {
   const [publicaciones, setPublicaciones] = useState([]);
 
   useEffect(() => {
-    fetch(URL_POSTS)
+    fetch(`${URL_POSTS}/posts`)
       .then((res) => res.json())
       .then((data) => {
         setPublicaciones(data);
@@ -21,7 +22,7 @@ function PublicacionesSL() {
   const handleHidePost = (postId, isHidden) => {
     const newHiddenState = !isHidden;
 
-    fetch(`http://localhost:3001/posts/${postId}`, {
+    fetch(`${URL_POSTS}/posts/${postId}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
