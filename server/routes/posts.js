@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import { PostController } from '../controllers/posts.js';
+import { PostModel } from '../models/mysql/post.js';
 
 export const postsRouter = Router();
 
-postsRouter.get('/', PostController.getAll);
-postsRouter.post('/', PostController.create);
-postsRouter.put('/:id', PostController.update);
+postsRouter.get('/', PostModel.getAll);
+postsRouter.post('/', PostModel.create);
+postsRouter.put('/:id', PostModel.update);

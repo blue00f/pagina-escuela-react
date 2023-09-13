@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { LoginController } from '../controllers/login.js';
+import { LoginModel } from '../models/mysql/post.js';
 
 export const loginRouter = Router();
 
-loginRouter.post('/', LoginController.getUser);
+loginRouter.post('/', LoginModel.getUser);
