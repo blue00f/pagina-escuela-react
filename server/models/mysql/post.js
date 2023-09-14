@@ -11,20 +11,12 @@ const DEFAULT_CONFIG = {
 
 const connectionString = process.env.DATABASE_URL ?? DEFAULT_CONFIG;
 
-const connection = mysql.createConnection(connectionString);
-
-connection.connect((err) => {
-  if (err) {
-    console.error('Error al conectar con la base de datos', err);
-  } else {
-    console.log('Conexion exitosa a la base de datos');
-  }
-});
+const pool = mysql.createPool(connectionString);
 
 export class PostModel {
   static async getAll(req, res) {
     const sql = 'SELECT * FROM posts ORDER BY idPost DESC';
-    connection.query(sql, (err, result) => {
+    pool.query(sql, (err, result) => {
       if (err) {
         console.error('Error al obtener las publicaciones', err);
         res.status(500).json({ error: 'Error al obtener las publicaciones' });
@@ -39,7 +31,7 @@ export class PostModel {
     const { title, content } = req.body;
 
     const sql = 'INSERT INTO posts (title, content) VALUES (?, ?)';
-    connection.query(sql, [title, content], (err, result) => {
+    pool.query(sql, [title, content], (err, result) => {
       if (err) {
         console.error('Error al insertar en la base de datos', err);
         res
@@ -56,7 +48,7 @@ export class PostModel {
     const { hidden } = req.body; // Asegúrate de que estás obteniendo el campo hidden del cuerpo de la solicitud
 
     const sql = 'UPDATE posts SET hidden = ? WHERE idPost = ?';
-    connection.query(sql, [hidden, postId], (err, result) => {
+    pool.query(sql, [hidden, postId], (err, result) => {
       if (err) {
         console.error(
           'Error al ocultar/mostrar la publicación en la base de datos',
@@ -78,7 +70,7 @@ export class LoginModel {
 
     const sql =
       'SELECT name, password FROM users WHERE name = ? AND password = ?';
-    connection.query(sql, [Username, Password], (err, result) => {
+    pool.query(sql, [Username, Password], (err, result) => {
       if (err) {
         console.error('Error al comparar usuarios:', err);
         res
