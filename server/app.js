@@ -12,7 +12,7 @@ app.disable('x-powered-by');
 app.use('/posts', postsRouter);
 app.use('/login', loginRouter);
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT ?? 3001;
 
 app.listen(PORT, () => {
   console.log(`servidor corriendo en http://localhost:${PORT}`);
