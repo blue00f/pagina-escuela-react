@@ -1,13 +1,13 @@
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 
 function formatDate(dateStr) {
-  const options = { day: 'numeric', month: 'long', year: 'numeric' };
-  const date = new Date(dateStr);
-  return date.toLocaleDateString('es-ES', options);
+  const options = { day: 'numeric', month: 'long', year: 'numeric' }
+  const date = new Date(dateStr)
+  return date.toLocaleDateString('es-ES', options)
 }
 
 function CardPublicacion({ title, content, dateUploaded }) {
-  const formattedDate = formatDate(dateUploaded);
+  const formattedDate = formatDate(dateUploaded)
   return (
     <a href="#">
       <div className="contenedor-img">
@@ -22,13 +22,13 @@ function CardPublicacion({ title, content, dateUploaded }) {
         </div>
       </div>
     </a>
-  );
+  )
 }
 
 CardPublicacion.propTypes = {
   title: PropTypes.string,
   content: PropTypes.string,
   dateUploaded: PropTypes.string,
-};
+}
 
-export default CardPublicacion;
+export default CardPublicacion

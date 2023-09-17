@@ -1,4 +1,4 @@
-import { HashRouter as Routes, Route, useNavigate } from 'react-router-dom'
+import { Routes, Route, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
 import Sidebar from '../Sidebar/Sidebar'
