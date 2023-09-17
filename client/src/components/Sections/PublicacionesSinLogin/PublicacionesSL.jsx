@@ -1,56 +1,23 @@
-import { useState, useEffect } from 'react';
-import CardPublicacion from '../../CardPublicacion/CardPublicacion';
-import './Publicaciones.css';
+import { useState, useEffect } from 'react'
+import CardPublicacion from '../../CardPublicacion/CardPublicacion'
+import './Publicaciones.css'
 
-// const URL_LOCAL = 'http://localhost:3001/posts';
-const URL_POSTS = 'https://pagina-escuela-react-production.up.railway.app';
+// const URL_POSTS = 'http://localhost:3001/posts'
+const URL_POSTS = 'https://pagina-escuela-react-production.up.railway.app'
 
 function PublicacionesSL() {
-  const [publicaciones, setPublicaciones] = useState([]);
+  const [publicaciones, setPublicaciones] = useState([])
 
   useEffect(() => {
     fetch(`${URL_POSTS}/posts`)
       .then((res) => res.json())
       .then((data) => {
-        setPublicaciones(data);
+        setPublicaciones(data)
       })
       .catch((error) => {
-        console.error('Error al obtener las publicaciones: ', error);
-      });
-  }, []);
-
-  const handleHidePost = (postId, isHidden) => {
-    const newHiddenState = !isHidden;
-
-    fetch(`${URL_POSTS}/posts/${postId}`, {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ hidden: newHiddenState }),
-    })
-      .then((response) => {
-        if (response.ok) {
-          return response.json();
-        } else {
-          throw new Error(
-            'Error al ocultar/mostrar la publicación: ' + response.statusText
-          );
-        }
+        console.error('Error al obtener las publicaciones: ', error)
       })
-      .then((data) => {
-        console.log(data.message);
-
-        setPublicaciones((prevPublicaciones) =>
-          prevPublicaciones.map((pub) =>
-            pub.idPost === postId ? { ...pub, hidden: newHiddenState } : pub
-          )
-        );
-      })
-      .catch((error) => {
-        console.error('Error al ocultar/mostrar la publicación:', error);
-      });
-  };
+  }, [])
 
   return (
     <section className="content-container">
@@ -73,7 +40,7 @@ function PublicacionesSL() {
         ))}
       </div>
     </section>
-  );
+  )
 }
 
-export default PublicacionesSL;
+export default PublicacionesSL
