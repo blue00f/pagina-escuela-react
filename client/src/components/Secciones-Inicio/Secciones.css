@@ -1,0 +1,70 @@
+:root {
+    --blue: #007bc7;
+    --indigo: #6610f2;
+    --purple: #9b59b6;
+    --pink: #e83e8c;
+    --red: #c93b3b;
+    --orange: #ffa82e;
+    --yellow: #ffdb2e;
+    --green: #26874a;
+    --teal: #18b596;
+    --cyan: #009afd;
+    --white: #fff;
+    --gray: #666666;
+    --gray-dark: #333333;
+    --primary: #ffdb2e;
+    --secondary: #5c6a7a;
+    --success: #26874a;
+    --info: #007bc7;
+    --danger: #c93b3b;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 592px;
+    --breakpoint-md: 752px;
+    --breakpoint-lg: 976px;
+    --breakpoint-xl: 1120px;
+    --font-family-sans-serif: "Open Sans", (system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    }
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Open Sans,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #38485c;
+    text-align: left;
+    background-color: #fff;
+}
+
+.content ::-webkit-scrollbar {
+    width: 0.3rem;
+}
+
+.content ::-webkit-scrollbar-thumb {
+    background: rgba(209,216,224,.7);
+    border-radius: 0.5rem;
+}
+
+.content ::-webkit-scrollbar-track {
+    background: rgba(209,216,224,.4);
+    border-radius: 0.5rem;
+} 
