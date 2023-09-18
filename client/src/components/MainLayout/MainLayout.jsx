@@ -7,15 +7,19 @@ import Footer from '../Footer/Footer'
 
 import LoginLayout from '../LoginLayout/LoginLayout'
 import Inicio from '../Sections/Inicio/Inicio.jsx'
-import PublicacionesSL from '../Sections/PublicacionesSinLogin/PublicacionesSL.jsx'
-import PublicacionesCL from '../Sections/PublicacionesConLogin/PublicacionesCL.jsx'
-import NuestraHistoria from '../Sections/NuestraHistoria/NuestraHistoria.jsx'
-import Autoridades from '../Sections/Autoridades/Autoridades.jsx'
-import Inscripciones from '../Sections/Inscripciones/Inscripciones.jsx'
-import Gao from '../Sections/Gao/Gao.jsx'
+import PublicacionesSL from '../Sections/Publicaciones/PublicacionesSL.jsx'
+import PublicacionesCL from '../Sections/Publicaciones/PublicacionesCL.jsx'
+
+import NuestraHistoria from '../Sections/Institucion/NuestraHistoria.jsx'
+import Autoridades from '../Sections/Institucion/Autoridades.jsx'
+import Galeria from '../Sections/Institucion/Galeria.jsx'
+import Inscripciones from '../Sections/Institucion/Inscripciones.jsx'
+
+import CicloBasico from '../Sections/PlanDeEstudio/CicloBasico.jsx'
+import Gao from '../Sections/PlanDeEstudio/Gao.jsx'
+import Computacion from '../Sections/PlanDeEstudio/Computacion.jsx'
+
 import PreguntasFrecuentes from '../Sections/PreguntasFrecuentes/PreguntasFrecuentes.jsx'
-import Computacion from '../Sections/Computacion/Computacion.jsx'
-import CicloBasico from '../Sections/CicloBasico/CicloBasico.jsx'
 import NotFound from '../Sections/NotFound/NotFound.jsx'
 import './LoginButton.css'
 
@@ -31,10 +35,10 @@ function MainLayout() {
     const navigate = useNavigate()
     useEffect(() => {
       if (isLoggedIn && !hasRedirected) {
-        navigate('/PublicacionesCL')
+        navigate('/publicaciones-logged-in')
         setHasRedirected(true)
       }
-    }, [isLoggedIn, navigate, hasRedirected])
+    }, [isLoggedIn, navigate])
 
     return null
   }
@@ -55,9 +59,17 @@ function MainLayout() {
       window.removeEventListener('resize', handleResize)
     }
   }, [])
+
   return (
     <div className="grid-container">
-      {isLaptopResolution ? <SidebarResponsive /> : <Sidebar />}
+      {isLaptopResolution ? (
+        <SidebarResponsive
+          isLoggedIn={isLoggedIn}
+          handleLogout={handleLogout}
+        />
+      ) : (
+        <Sidebar isLoggedIn={isLoggedIn} handleLogout={handleLogout} />
+      )}
       <RenderRedirectToPublicacionesCL isLoggedIn={isLoggedIn} />
 
       <Routes>
@@ -75,16 +87,17 @@ function MainLayout() {
 
         <Route
           exact
-          path="/PublicacionesSL"
+          path="/publicaciones"
           element={isLoggedIn ? <PublicacionesCL /> : <PublicacionesSL />}
         />
         <Route
           exact
-          path="/PublicacionesCL"
+          path="/publicaciones-logged-in"
           element={isLoggedIn ? <PublicacionesCL /> : <PublicacionesSL />}
         />
         <Route exact path="/nuestra-historia" element={<NuestraHistoria />} />
         <Route exact path="/autoridades" element={<Autoridades />} />
+        <Route exact path="/galeria" element={<Galeria />} />
         <Route exact path="/inscripciones" element={<Inscripciones />} />
         <Route exact path="/gao" element={<Gao />} />
         <Route
@@ -97,9 +110,6 @@ function MainLayout() {
 
         <Route exact path="*" element={<NotFound />} />
       </Routes>
-
-      <Sidebar isLoggedIn={isLoggedIn} handleLogout={handleLogout} />
-      <SidebarResponsive isLoggedIn={isLoggedIn} handleLogout={handleLogout} />
 
       <Footer />
     </div>

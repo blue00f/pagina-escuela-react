@@ -1,6 +1,5 @@
-import SidebarSubsection from './SidebarSubsection.jsx';
-import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import SidebarSubsection from './SidebarSubsection.jsx'
+import { Link } from 'react-router-dom'
 
 function SidebarLink({ icon, label, url, hasSubsections, subsections }) {
   return (
@@ -13,15 +12,7 @@ function SidebarLink({ icon, label, url, hasSubsections, subsections }) {
       </Link>
       {hasSubsections && <SidebarSubsection subsections={subsections} />}
     </>
-  );
+  )
 }
 
-SidebarLink.propTypes = {
-  icon: PropTypes.string,
-  label: PropTypes.string,
-  url: PropTypes.string,
-  hasSubsections: PropTypes.string,
-  subsections: PropTypes.string,
-};
-
-export default SidebarLink;
+export default SidebarLink

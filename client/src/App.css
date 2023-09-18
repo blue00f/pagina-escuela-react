@@ -79,8 +79,6 @@ a { text-decoration: none; }
   grid-area: content;
 }
 
-
-
 @media (max-width: 1470px) {
   .grid-container {
       display: block;

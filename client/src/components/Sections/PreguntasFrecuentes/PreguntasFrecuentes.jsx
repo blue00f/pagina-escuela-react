@@ -1,4 +1,4 @@
-import './PreguntasFrecuentes.css';
+import './PreguntasFrecuentes.css'
 
 function PreguntasFrecuentes() {
   return (
@@ -166,7 +166,7 @@ function PreguntasFrecuentes() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default PreguntasFrecuentes;
+export default PreguntasFrecuentes

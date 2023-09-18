@@ -1,4 +1,4 @@
-import './NuestraHistoria.css';
+import './NuestraHistoria.css'
 
 function NuestraHistoria() {
   return (
@@ -37,7 +37,7 @@ function NuestraHistoria() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default NuestraHistoria;
+export default NuestraHistoria

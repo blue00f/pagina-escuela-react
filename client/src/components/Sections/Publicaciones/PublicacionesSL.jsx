@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import CardPublicacion from '../../CardPublicacion/CardPublicacion'
 import './Publicaciones.css'
 
-const URL_POSTS = 'http://localhost:3001/posts'
+const URL_POSTS = 'http://localhost:3001'
 //const URL_POSTS = 'https://pagina-escuela-react-production.up.railway.app'
 
 function PublicacionesSL() {

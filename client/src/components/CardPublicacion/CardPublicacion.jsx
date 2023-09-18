@@ -1,15 +1,9 @@
-import PropTypes from 'prop-types'
-
-function formatDate(dateStr) {
-  const options = { day: 'numeric', month: 'long', year: 'numeric' }
-  const date = new Date(dateStr)
-  return date.toLocaleDateString('es-ES', options)
-}
+import { getFormattedDate } from '../../utils/getFormattedDate'
 
 function CardPublicacion({ title, content, dateUploaded }) {
-  const formattedDate = formatDate(dateUploaded)
+  const formattedDate = getFormattedDate(dateUploaded)
   return (
-    <a href="#">
+    <a href="/">
       <div className="contenedor-img">
         <img src="./fotoEscuela.jpg" alt="Entrada de la escuela" />
         <div className="descripcion-superior-div">
@@ -23,12 +17,6 @@ function CardPublicacion({ title, content, dateUploaded }) {
       </div>
     </a>
   )
-}
-
-CardPublicacion.propTypes = {
-  title: PropTypes.string,
-  content: PropTypes.string,
-  dateUploaded: PropTypes.string,
 }
 
 export default CardPublicacion

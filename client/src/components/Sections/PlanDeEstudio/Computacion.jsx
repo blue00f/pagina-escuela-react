@@ -1,13 +1,12 @@
-import './Gao.css';
+import './especialidades.css'
 
-function Gao() {
+function Computacion() {
   return (
     <section className="content-container">
       <div className="contenedor-titulo">
-        <h2 className="titulo-seccion">
-          Gestión y Administración de las Organizaciones
-        </h2>
+        <h2 className="titulo-seccion">Computación</h2>
       </div>
+
       <div className="grid-section">
         <div className="description-1" role="tabpanel">
           <h3>Trayectoria Formativa y Cargas Horarias</h3>
@@ -54,7 +53,7 @@ function Gao() {
 
           <div className="mas-info">
             <a
-              href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=11"
+              href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#7"
               target="_blank"
               rel="noreferrer"
             >
@@ -71,7 +70,7 @@ function Gao() {
           >
             <table width="720px">
               <tr>
-                <th colSpan="3">Tercer año</th>
+                <th colSpan="4">Tercer año</th>
               </tr>
               <tr>
                 <th>Campo de Formación</th>
@@ -84,7 +83,7 @@ function Gao() {
               <tr>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=23"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=22"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -108,7 +107,7 @@ function Gao() {
               <tr>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=21"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=16"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -120,7 +119,7 @@ function Gao() {
               <tr>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=21"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=17"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -132,7 +131,7 @@ function Gao() {
               <tr>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=21"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=17"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -145,7 +144,7 @@ function Gao() {
               <tr>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=21"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=18"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -154,11 +153,12 @@ function Gao() {
                 </td>
                 <td>3hs.</td>
               </tr>
+
               <tr>
-                <th rowSpan="5">Científico Tecnológica</th>
+                <th rowSpan="6">Científico Tecnológica</th>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=26"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=27"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -171,7 +171,7 @@ function Gao() {
               <tr>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=27"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=29"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -184,7 +184,7 @@ function Gao() {
               <tr>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=28"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=30"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -196,7 +196,20 @@ function Gao() {
               <tr>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=27"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=31"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Taller Tecnología y Control
+                  </a>
+                </td>
+                <td>4hs</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <a
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=30"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -205,19 +218,16 @@ function Gao() {
                 </td>
                 <td>4hs</td>
               </tr>
-              <tr>
-                <td>
-                  <a href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=28">
-                    Taller de Informática Aplicada y del Control
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
+              <tr />
               <tr>
                 <th>Técnica Específica</th>
                 <td>
-                  <a href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=39">
-                    Taller de la especialidad
+                  <a
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=36"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Taller
                   </a>
                 </td>
                 <td>8hs</td>
@@ -240,14 +250,14 @@ function Gao() {
                 <th>Hs. por Semana</th>
               </tr>
               <tr>
-                <th rowSpan="5" colSpan="2">
+                <th rowSpan="6" colSpan="2">
                   General
                 </th>
               </tr>
               <tr>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=23"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=22"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -271,11 +281,23 @@ function Gao() {
               <tr>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=23"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=16"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Ciudadanía y Trabajo
+                    Historia
+                  </a>
+                </td>
+                <td>2hs.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=17"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Geografía
                   </a>
                 </td>
                 <td>2hs.</td>
@@ -284,7 +306,7 @@ function Gao() {
               <tr>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=21"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=18"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -295,12 +317,12 @@ function Gao() {
               </tr>
 
               <tr>
-                <th rowSpan="2" colSpan="2">
+                <th rowSpan="1" colSpan="2">
                   Científico Tecnológica
                 </th>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=26"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=27"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -309,102 +331,69 @@ function Gao() {
                 </td>
                 <td>4hs</td>
               </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=28"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Químmica Aplicada
-                  </a>
-                </td>
-                <td>3hs</td>
-              </tr>
 
               <tr>
-                <th rowSpan="7" colSpan="2">
-                  Técnica Específica
+                <th rowSpan="5">Técnica Específica</th>
+                <th rowSpan="2" colSpan="1">
+                  Desarrollo de Productos Informáticos
                 </th>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=31"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=36"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Computación Aplicada I
+                    Laboratorio de Algoritmos y Estructura de datos
                   </a>
                 </td>
-                <td>4hs</td>
+                <td>9hs</td>
               </tr>
               <tr>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=39"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=36"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Contabilidad I
+                    Base de Datos
                   </a>
                 </td>
                 <td>6hs</td>
               </tr>
               <tr>
+                <th rowSpan="2">Equipos, Instalaciones y Sistemas</th>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=31"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=38"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Introducción a la Economía
+                    Organización de las Computadoras
                   </a>
                 </td>
-                <td>4hs</td>
+                <td>7hs</td>
               </tr>
               <tr>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=32"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=39"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Historia de la Industria y el Comercio{' '}
-                  </a>
-                </td>
-                <td>3hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=32"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Matemática Financiera
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=33"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Teoría de las Organizaciones
+                    Lógica Computacional
                   </a>
                 </td>
                 <td>3hs</td>
               </tr>
               <tr>
+                <th>Proyecto</th>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=39"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=41"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Taller Administrativo-Contable I
+                    Proyecto I
                   </a>
                 </td>
                 <td>4hs</td>
@@ -422,17 +411,19 @@ function Gao() {
                 <th colSpan="4">Quinto año</th>
               </tr>
               <tr>
-                <th>Campo de Formación</th>
+                <th colSpan="2">Campo de Formación</th>
                 <th>Unidad Curricular</th>
                 <th>Hs. por Semana</th>
               </tr>
               <tr>
-                <th rowSpan="4">General</th>
+                <th rowSpan="4" colSpan="2">
+                  General
+                </th>
               </tr>
               <tr>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=23"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=22"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -456,7 +447,7 @@ function Gao() {
               <tr>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=21"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=18"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -467,22 +458,24 @@ function Gao() {
               </tr>
 
               <tr>
-                <th rowSpan="2">Científico Tecnológica</th>
+                <th rowSpan="3" colSpan="2">
+                  Científico Tecnológica
+                </th>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=26"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=27"
                     target="_blank"
                     rel="noreferrer"
                   >
                     Matemática
                   </a>
                 </td>
-                <td>3hs</td>
+                <td>4hs</td>
               </tr>
               <tr>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=29"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=32"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -491,52 +484,19 @@ function Gao() {
                 </td>
                 <td>3hs</td>
               </tr>
+              <tr />
               <tr>
-                <th rowSpan="8">Técnica Específica</th>
-
+                <th rowSpan="6">Técnica Específica</th>
+                <th rowSpan="3" colSpan="1">
+                  Desarrollo de Productos Informáticos
+                </th>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=33"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=37"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Computación Aplicada II
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=33"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Introducción al derecho
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=34"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Geografía Económica Argentina
-                  </a>
-                </td>
-                <td>3hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=39"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Contabilidad II
+                    Administración y Gestión de Base de datos
                   </a>
                 </td>
                 <td>6hs</td>
@@ -544,52 +504,54 @@ function Gao() {
               <tr>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=34"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=37"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Costos
+                    Laboratorio de Programación Orientada a Objetos
                   </a>
                 </td>
-                <td>3hs</td>
+                <td>9hs</td>
               </tr>
               <tr>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=34"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=37"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Organización de la Producción
+                    Análisis de Sistemas
                   </a>
                 </td>
                 <td>4hs</td>
               </tr>
               <tr>
+                <th>Equipos, Instalaciones y Sistemas</th>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=34"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=37"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Psicología de las Organizaciones
+                    Redes
                   </a>
                 </td>
-                <td>4hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=39"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Taller Administrativo-Contable II
-                  </a>
-                </td>
-                <td>4hs</td>
+                <td>7hs</td>
               </tr>
 
+              <tr>
+                <th>Proyecto</th>
+                <td>
+                  <a
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=41"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Proyecto II
+                  </a>
+                </td>
+                <td>4hs</td>
+              </tr>
               <tr>
                 <th colSpan="2">Horas cátedra por semana</th>
                 <td>46hs</td>
@@ -603,17 +565,43 @@ function Gao() {
                 <th colSpan="4">Sexto año</th>
               </tr>
               <tr>
-                <th>Campo de Formación</th>
+                <th colSpan="2">Campo de Formación</th>
                 <th>Unidad Curricular</th>
                 <th>Hs. por Semana</th>
               </tr>
               <tr>
-                <th rowSpan="4">General</th>
+                <th rowSpan="5" colSpan="2">
+                  General
+                </th>
               </tr>
               <tr>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=25"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=21"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Ciudadanía y Trabajo
+                  </a>
+                </td>
+                <td>2hs.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://buenosaires.gob.ar/areas/educacion/curricula/dle_web.pdf"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Inglés
+                  </a>
+                </td>
+                <td>3hs.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=24"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -622,22 +610,11 @@ function Gao() {
                 </td>
                 <td>2hs.</td>
               </tr>
+
               <tr>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=22"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Inglés
-                  </a>
-                </td>
-                <td>2hs.</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=21"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=18"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -648,22 +625,25 @@ function Gao() {
               </tr>
 
               <tr>
-                <th rowSpan="2">Científico Tecnológica</th>
+                <th rowSpan="3" colSpan="2">
+                  Científico Tecnológica
+                </th>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=27"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=27"
                     target="_blank"
                     rel="noreferrer"
                   >
                     Matemática
                   </a>
                 </td>
-                <td>3hs</td>
+                <td>4hs</td>
               </tr>
+
               <tr>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=29"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=32"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -672,107 +652,63 @@ function Gao() {
                 </td>
                 <td>4hs</td>
               </tr>
+              <tr />
               <tr>
-                <th rowSpan="8">Técnica Específica</th>
-
+                <th rowSpan="4">Técnica Específica</th>
+                <th rowSpan="2" colSpan="1">
+                  Desarrollo de Productos Informáticos
+                </th>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=35"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=38"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Computación Aplicada III
+                    Desarrollo de Sistemas
                   </a>
                 </td>
-                <td>2hs</td>
+                <td>6hs</td>
               </tr>
               <tr>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=36"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=38"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Derecho Comercial Administrativo
+                    Programación sobre Redes
                   </a>
                 </td>
-                <td>2hs</td>
+                <td>6hs</td>
               </tr>
               <tr>
+                <th>Equipos, Instalaciones y Sistemas</th>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=36"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=40"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Bancos y Finanzas
+                    Administración de Sistemas y Redes
                   </a>
                 </td>
-                <td>4hs</td>
+                <td>7hs</td>
               </tr>
               <tr>
+                <th>PP</th>
                 <td>
                   <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=36"
+                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=11"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Estados Contables
-                  </a>
-                </td>
-                <td>5hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=37"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Impuestos
-                  </a>
-                </td>
-                <td>3hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=37"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Marketing
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=38"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Recursos Humanos
-                  </a>
-                </td>
-                <td>3hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=39"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Prácticas Profesionalizantes
+                    Practicas Profesionalizantes
                   </a>
                 </td>
                 <td>9hs</td>
               </tr>
-
               <tr>
-                <th colSpan="2">Horas cátedra por semana</th>
+                <th colSpan="3">Horas cátedra por semana</th>
                 <td>46hs</td>
               </tr>
             </table>
@@ -792,7 +728,6 @@ function Gao() {
                 aria-expanded="false"
                 aria-controls="flush-collapseOne"
               >
-                {' '}
                 Título que Otorga
               </button>
             </h2>
@@ -804,7 +739,7 @@ function Gao() {
             >
               <div className="accordion-body">
                 {' '}
-                <p>Técnico en Gestión y Administración de las Organizaciones</p>
+                <p>Técnico en Computación</p>
               </div>
             </div>
           </div>
@@ -865,34 +800,33 @@ function Gao() {
 
                 <ol>
                   <li>
-                    Relevar y sistematizar información generada por las
-                    diferentes áreas de la organización.
+                    {' '}
+                    Proyectar, producir, adaptar, implantar y mantener
+                    aplicaciones informáticas.{' '}
                   </li>
                   <li>
-                    Relacionar datos e información elaborada en un área de la
-                    organización (ya sea por él o por otros) con la proveniente
-                    de los demás sectores involucrados, asegurando la coherencia
-                    e integridad de la gestión administrativa.
+                    Proyectar, instalar, configurar y mantener sistemas
+                    informáticos.
                   </li>
                   <li>
-                    Ejecutar tareas operativas en la administración de las áreas
-                    de compras, comercialización, finanzas, recursos humanos y
-                    contabilidad de todo tipo de organizaciones.
+                    Realizar la documentación técnica y la de los usuarios de
+                    acuerdo con los requerimientos funcionales y técnicos de las
+                    aplicaciones y sistemas.
                   </li>
                   <li>
-                    Auxiliar al/los propietario/s y/o directivo/s mediante el
-                    relevamiento, selección y análisis de datos elaborando
-                    informes para la toma de decisiones.
+                    Asistir y asesorar a los usuarios para la elección,
+                    adquisición, instalación y personalización de aplicaciones
+                    de equipos y sistemas
                   </li>
                   <li>
-                    Asistir a los profesionales del área en las actividades
-                    incluidas en su perfil profesional.
+                    {' '}
+                    Actuar en todos los casos bajo las normativas de seguridad
+                    vigentes.
                   </li>
                   <li>
-                    Actuar con responsabilidad interrelacionando sus actividades
-                    con las que se desarrollan en otras áreas de la organización
-                    y evaluando sus efectos sobre la organización en su
-                    conjunto.
+                    Desempeñarse profesionalmente en relación de dependencia o
+                    mediante emprendimientos económicos-productivos en forma
+                    individual o asociativa.
                   </li>
                 </ol>
               </div>
@@ -920,135 +854,160 @@ function Gao() {
             >
               <div className="accordion-body">
                 <p>
-                  El Técnico en Gestión y Administración de las Organizaciones
-                  está capacitado para manifestar conocimientos, habilidades,
-                  destrezas, valores y actitudes en situaciones reales de
-                  trabajo, conforme a criterios de profesionalidad propios de su
-                  área y de responsabilidad social al:
+                  En forma conjunta, procesos tecnológicos y capacidades técnico
+                  profesionales constituyen las áreas de especialización que
+                  para un Técnico en Computación son las siguientes:
                 </p>
                 <details open>
-                  <summary>Administrar las compras</summary>
+                  <summary>Desarrollo de productos informáticos</summary>
                   <p>
-                    La función de Administrar las compras integra las
-                    actividades relacionadas con el abastecimiento,
-                    almacenamiento y distribución de los insumos (materias
-                    primas, materiales, equipamiento, etc.) requeridos por la
-                    organización así como al control de los inventarios.
+                    El área tiene por objeto particular el proceso general de
+                    desarrollo de aplicaciones o productos informáticos
+                    (software), el cual se organiza en los subprocesos de
+                    análisis, diseño, producción y verificación de aplicaciones
+                    y productos informáticos, e integra las siguientes técnicas
+                    y conocimientos tecnológicos específicos: Técnicas de
+                    modelización de datos, procesos y flujos de información;
+                    Técnicas de programación de sistemas mediante paradigmas de
+                    programación estructurada y orientada a objetos; Técnicas de
+                    pruebas de programas; Asistencia al usuario final: técnicas
+                    para la elaboración de programas, guías y manuales para la
+                    utilización del sistema y las aplicaciones. Las capacidades
+                    del área son las siguientes:
                   </p>
                   <ul>
-                    <li>Programar las compras.</li>
-                    <li>Operar las compras.</li>
-                    <li>Monitorear y negociar las compras.</li>
-                    <li>Importar.</li>
+                    <li>
+                      Realizar el diseño general de aplicaciones y productos
+                      "software" de mediana complejidad, relevando los
+                      requerimientos técnicos y funcionales a resolver,
+                      elaborando alternativas de diseño de aplicaciones que
+                      cumplan con las especificaciones funcionales establecidas.
+                    </li>
+                    <li>
+                      Realizar el diseño detallado de todo tipo de aplicaciones
+                      y productos "software", de acuerdo con los requerimientos
+                      técnicos y funcionales especificados, aplicando las
+                      técnicas adecuadas de modelización de procesos, datos y
+                      flujos de información, y elaborando la documentación
+                      técnica de diseño.
+                    </li>
+                    <li>
+                      Elaborar aplicaciones informáticas de acuerdo con
+                      requerimientos funcionales y diseño detallado
+                      especificados, realizando la programación mediante los
+                      lenguajes y técnicas adecuados, y elaborando la
+                      documentación técnica de las aplicaciones utilizando
+                      simbología adecuada, ejecutando las pruebas de unidad
+                      según normas de calidad vigentes e incluyendo la
+                      información requerida para posteriores revisiones,
+                      modificaciones o adecuaciones del producto.
+                    </li>
+                    <li>
+                      Adaptar aplicaciones informáticas a usuarios y entornos
+                      específicos, realizando las modificaciones y/o
+                      personalizaciones de producto más adecuadas a los
+                      requisitos técnicos, funcionales y operativos
+                      especificados.
+                    </li>
+                    <li>
+                      Instalar, poner en funcionamiento y mantener aplicaciones
+                      informáticas, asistiendo al usuario para el uso óptimo de
+                      las aplicaciones, detectando y corrigiendo fallos de
+                      aplicaciones, y elaborando guías, manuales y/o
+                      presentaciones para usuarios, empleando los lenguajes y
+                      soportes adecuados.
+                    </li>
                   </ul>
                 </details>
 
                 <details open>
-                  <summary>Administrar las ventas</summary>
+                  <summary>Equipos y Sistemas</summary>
                   <p>
-                    Esta función hace referencia a la definición del mercado
-                    objetivo, a los mecanismos de promoción, a la programación y
-                    gestión comercial, al procesamiento de los pedidos, al
-                    almacenamiento de los bienes producidos por la organización
-                    y a las operaciones relacionadas con su entrega a los
-                    clientes.
+                    El área tiene por objeto todo lo referido a instalación,
+                    puesta en marcha y mantenimiento de equipos de computación,
+                    redes, componentes para los mismos, impresoras, sistemas de
+                    impresión, programas y sistemas o funcionalidades
+                    adicionales para los mismos. Además, particularmente, el
+                    proceso general de implantación y explotación de equipos y
+                    sistemas, el cual se organiza en los subprocesos de diseño,
+                    instalación, mantenimiento y administración de sistemas
+                    informáticos y redes, e integra las siguientes técnicas y
+                    conocimientos tecnológicos específicos: Proyecto,
+                    instalación y configuración de equipos y programas en
+                    sistemas informáticos y redes: tecnología de equipos,
+                    interconexión, sistemas operativos y "software" de
+                    aplicación, periféricos e impresoras; Organización y
+                    administración de los recursos de sistemas informáticos y
+                    redes: técnicas para establecer seguridad en el sistema y la
+                    información; Supervisión del mantenimiento y rendimiento de
+                    sistemas informáticos: técnicas de diagnóstico; Asistencia
+                    al usuario final: técnicas para la elaboración de programas,
+                    guías y manuales para la utilización de sistemas
+                    informáticos. Las capacidades del área son las siguientes:
                   </p>
                   <ul>
                     <li>
-                      Asistir en el estudio del mercado y en la promoción de los
-                      productos de la organización
-                    </li>
-                    <li>Operar las ventas.</li>
-                    <li>Coordinar las entregas y el servicio de postventa.</li>
-                    <li>Exportar.</li>
-                    <li>Operar plataformas de comercio electrónico.</li>
-                  </ul>
-                </details>
-
-                <details open>
-                  <summary>Administrar los recursos financieros</summary>
-                  <p>
-                    Esta función hace referencia a la gestión y agilización del
-                    financiamiento de operaciones de la organización atendiendo
-                    a su viabilidad y a la continuidad del proceso productivo.
-                  </p>
-                  <ul>
-                    <li>Preparar información financiera</li>
-                    <li>Realizar las cobranzas</li>
-                    <li>Realizar los pagos</li>
-                    <li>Interactuar con el sistema financiero.</li>
-                  </ul>
-                </details>
-
-                <details open>
-                  <summary>Administrar los recursos humanos</summary>
-                  <p>
-                    La función de Recursos Humanos incluye actividades
-                    vinculadas a la búsqueda, contratación, entrenamiento,
-                    desarrollo y remuneración del personal así como a la gestión
-                    de los conflictos y la generación de ambientes cooperativos
-                    de trabajo.
-                  </p>
-                  <ul>
-                    <li>
-                      Colaborar en la preselección y contratación de los
-                      recursos humanos.
+                      Proyectar y Diseñar sistemas informáticos y redes locales
+                      de mediana complejidad, relevando los recursos disponibles
+                      y los requisitos técnicos y funcionales a cubrir,
+                      realizando la especificación detallada de los recursos de
+                      hardware y software a utilizar, el estudio de costos y de
+                      factibilidad, y elaborando la documentación técnica
+                      correspondiente.
                     </li>
                     <li>
-                      Asistir en la capacitación y el desarrollo del personal.
+                      Instalar, configurar y verificar sistemas informáticos y
+                      redes, realizando su montaje y conexionado de acuerdo con
+                      especificaciones técnicas y normativa de seguridad
+                      vigente, instalando el software operativo y de aplicación,
+                      realizando las modificaciones, adaptaciones y
+                      personalizaciones adecuadas a usuarios y entornos
+                      específicos,técnicos, funcionales y operativos
+                      especificados.
                     </li>
-                    <li>Operar en la administración de personal.</li>
-                  </ul>
-                </details>
-
-                <details open>
-                  <summary>Registrar contablemente</summary>
-                  <p>
-                    Esta función incluye el registro contable y fiscal del
-                    conjunto de operaciones de la organización ya sea para su
-                    uso interno como para el cumplimiento de formas y plazos
-                    legales demandados por terceros.
-                  </p>
-                  <ul>
                     <li>
-                      Registrar las operaciones de los distintos sectores de la
-                      organización.
+                      Administrar redes locales de mediana complejidad,
+                      organizando los recursos y garantizando su disponibilidad
+                      a los usuarios, gestionando la conexión a redes extensas
+                      en función de necesidades de información de los usuarios.
                     </li>
-                    <li>Registrar en los libros contables.</li>
                     <li>
-                      Cumplimentar las obligaciones fiscales, laborales y
-                      legales.
+                      Mantener sistemas informáticos y redes locales, asistiendo
+                      a los usuarios para el uso óptimo de los sistemas,
+                      diagnosticando fallos de hardware y software y realizando
+                      las reparaciones y correcciones requeridas aplicando
+                      técnicas de seguridad e integridad de sistema e
+                      información.
                     </li>
-                    <li>Calcular y elaborar información de costos.</li>
                   </ul>
                 </details>
 
                 <p>
                   Cada uno de estos puntos en los ámbitos de producción, de
-                  servicios, comercialización, asesoramiento, verificación,
-                  proyecto, y gestión de emprendimientos, actuando en relación
-                  de dependencia o en forma independiente. Será capaz de
+                  servicios, mantenimiento, reparación de componentes,
+                  comercialización, asesoramiento, verificación, proyecto,
+                  ensayo, y gestión de emprendimientos, actuando en relación de
+                  dependencia o en forma independiente. Será capaz de
                   interpretar las definiciones estratégicas surgidas de los
                   estamentos técnicos y jerárquicos pertinentes, gestionar sus
                   actividades específicas, realizar y controlar la totalidad de
                   las actividades requeridas hasta su efectiva concreción,
                   teniendo en cuenta los criterios de seguridad, impacto
-                  ambiental, relaciones humanas, calidad y productividad.
+                  ambiental, relaciones humanas, calidad y productividad. Además
+                  sus desempeños están dedicados no sólo a instalar equipos,
+                  software y componentes de sistemas de computación y redes,
+                  sino también a solucionar problemas operativos relativamente
+                  puntuales, tanto de hardware y conectividad como de software,
+                  que se le suelen presentar al usuario en el ámbito de la
+                  informática profesional y personal.
                 </p>
-                <a
-                  href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Más información aquí.
-                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default Gao;
+export default Computacion

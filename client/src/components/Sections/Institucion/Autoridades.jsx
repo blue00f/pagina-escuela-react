@@ -1,4 +1,5 @@
-import CardAutoridad from '../../CardAutoridad/CardAutoridad';
+import CardAutoridad from '../../CardAutoridad/CardAutoridad'
+import styles from './Autoridades.module.css'
 
 function Autoridades() {
   return (
@@ -6,42 +7,37 @@ function Autoridades() {
       <div className="contenedor-titulo">
         <h2 className="titulo-seccion">Autoridades</h2>
       </div>
-      <div className="contenedor-imagenes">
+      <div className={styles.contenedorImagenes}>
         <CardAutoridad
           foto={'./fotoUser.webp'}
           cargo={'Regente'}
-          nombre={'Ferreyra'}
+          nombre={'Cosme Fulanito'}
         />
         <CardAutoridad
           foto={'./fotoUser.webp'}
-          cargo={'Preceptor'}
-          nombre={'Irigoyen'}
+          cargo={'Vicerrectora'}
+          nombre={'Cosme Fulanito'}
         />
         <CardAutoridad
           foto={'./fotoUser.webp'}
-          cargo={'Regente'}
-          nombre={'Ferreyra'}
+          cargo={'Rector TM'}
+          nombre={'Cosme Fulanito'}
         />
       </div>
-      <div className="contenedor-imagenes">
+      <div className={styles.contenedorImagenes}>
         <CardAutoridad
           foto={'./fotoUser.webp'}
-          cargo={'Regente'}
-          nombre={'Fereyra'}
+          cargo={'Rector TT'}
+          nombre={'Cosme Fulanito'}
         />
         <CardAutoridad
           foto={'./fotoUser.webp'}
-          cargo={'Preceptor'}
-          nombre={'Irigoyen'}
-        />
-        <CardAutoridad
-          foto={'./fotoUser.webp'}
-          cargo={'Regente'}
-          nombre={'Fereyra'}
+          cargo={'Jefe General de Enseñanza Práctica'}
+          nombre={'Cosme Fulanito'}
         />
       </div>
     </section>
-  );
+  )
 }
 
-export default Autoridades;
+export default Autoridades

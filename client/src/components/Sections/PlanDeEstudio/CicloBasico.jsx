@@ -1,3 +1,5 @@
+import './especialidades.css'
+
 function CicloBasico() {
   return (
     <section className="content-container">
@@ -300,7 +302,7 @@ function CicloBasico() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default CicloBasico;
+export default CicloBasico

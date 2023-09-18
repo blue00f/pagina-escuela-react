@@ -23,7 +23,7 @@ const sections = [
   {
     icon: <PublicationIcon />,
     label: 'Publicaciones',
-    url: 'publicacionesSL',
+    url: 'publicaciones',
     hasSubsections: false,
     subsections: [],
   },

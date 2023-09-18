@@ -1,4 +1,4 @@
-import './Inscripciones.css';
+import './Inscripciones.css'
 
 function Inscripciones() {
   return (
@@ -52,7 +52,7 @@ function Inscripciones() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default Inscripciones;
+export default Inscripciones
