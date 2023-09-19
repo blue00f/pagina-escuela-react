@@ -7,11 +7,10 @@ function Computacion() {
         <h2 className="titulo-seccion">Computación</h2>
       </div>
 
-      <div className="grid-section">
-        <div className="description-1" role="tabpanel">
-          <h3>Trayectoria Formativa y Cargas Horarias</h3>
-        </div>
-
+      <div className="description-1" role="tabpanel">
+        <h3>Trayectoria formativa y cargas horarias</h3>
+      </div>
+      <div className="flex-plan-estudio">
         <div className="lista_e_info">
           <div className="list-group" id="myList" role="tablist">
             <a
@@ -69,648 +68,672 @@ function Computacion() {
             id="tabla1"
           >
             <table width="720px">
-              <tr>
-                <th colSpan="4">Tercer año</th>
-              </tr>
-              <tr>
-                <th>Campo de Formación</th>
-                <th>Unidad Curricular</th>
-                <th>Hs. por Semana</th>
-              </tr>
-              <tr>
-                <th rowSpan="7">General</th>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=22"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Lengua y Literatura
-                  </a>
-                </td>
-                <td>4hs.</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://buenosaires.gob.ar/areas/educacion/curricula/dle_web.pdf"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Inglés
-                  </a>
-                </td>
-                <td>3hs.</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=16"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Historia
-                  </a>
-                </td>
-                <td>3hs.</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=17"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Geografía
-                  </a>
-                </td>
-                <td>3hs.</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=17"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Educación Ciudadana
-                  </a>
-                </td>
-                <td>2hs.</td>
-              </tr>
+              <thead>
+                <tr>
+                  <th colSpan="4">Tercer año</th>
+                </tr>
+                <tr>
+                  <th>Campo de Formación</th>
+                  <th>Unidad Curricular</th>
+                  <th>Hs. por Semana</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th rowSpan="7">General</th>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=22"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Lengua y Literatura
+                    </a>
+                  </td>
+                  <td>4hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://buenosaires.gob.ar/areas/educacion/curricula/dle_web.pdf"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Inglés
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=16"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Historia
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=17"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Geografía
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=17"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Educación Ciudadana
+                    </a>
+                  </td>
+                  <td>2hs</td>
+                </tr>
 
-              <tr>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=18"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Educación Física
-                  </a>
-                </td>
-                <td>3hs.</td>
-              </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=18"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Educación Física
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
 
-              <tr>
-                <th rowSpan="6">Científico Tecnológica</th>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=27"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Matemática
-                  </a>
-                </td>
-                <td>5hs</td>
-              </tr>
+                <tr>
+                  <th rowSpan="6">Científico Tecnológica</th>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=27"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Matemática
+                    </a>
+                  </td>
+                  <td>5hs</td>
+                </tr>
 
-              <tr>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=29"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Física
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=29"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Física
+                    </a>
+                  </td>
+                  <td>4hs</td>
+                </tr>
 
-              <tr>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=30"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Química
-                  </a>
-                </td>
-                <td>3hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=31"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Taller Tecnología y Control
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=30"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Química
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=31"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Taller Tecnología y Control
+                    </a>
+                  </td>
+                  <td>4hs</td>
+                </tr>
 
-              <tr>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=30"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Tecnología de la Representación
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
-              <tr />
-              <tr>
-                <th>Técnica Específica</th>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=36"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Taller
-                  </a>
-                </td>
-                <td>8hs</td>
-              </tr>
-              <tr>
-                <th colSpan="2">Horas cátedra por semana</th>
-                <td>46hs</td>
-              </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=30"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Tecnología de la Representación
+                    </a>
+                  </td>
+                  <td>4hs</td>
+                </tr>
+                <tr />
+                <tr>
+                  <th>Técnica Específica</th>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=36"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Taller
+                    </a>
+                  </td>
+                  <td>8hs</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th colSpan="2">Horas cátedra por semana</th>
+                  <td>46hs</td>
+                </tr>
+              </tfoot>
             </table>
           </div>
 
           <div className="tab-pane fade" role="tabpanel" id="tabla2">
             <table width="720px">
-              <tr>
-                <th colSpan="4">Cuarto año</th>
-              </tr>
-              <tr>
-                <th colSpan="2">Campo de Formación</th>
-                <th>Unidad Curricular</th>
-                <th>Hs. por Semana</th>
-              </tr>
-              <tr>
-                <th rowSpan="6" colSpan="2">
-                  General
-                </th>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=22"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Lengua y Literatura
-                  </a>
-                </td>
-                <td>3hs.</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://buenosaires.gob.ar/areas/educacion/curricula/dle_web.pdf"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Inglés
-                  </a>
-                </td>
-                <td>3hs.</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=16"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Historia
-                  </a>
-                </td>
-                <td>2hs.</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=17"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Geografía
-                  </a>
-                </td>
-                <td>2hs.</td>
-              </tr>
+              <thead>
+                <tr>
+                  <th colSpan="4">Cuarto año</th>
+                </tr>
+                <tr>
+                  <th colSpan="2">Campo de Formación</th>
+                  <th>Unidad Curricular</th>
+                  <th>Hs. por Semana</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th rowSpan="6" colSpan="2">
+                    General
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=22"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Lengua y Literatura
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://buenosaires.gob.ar/areas/educacion/curricula/dle_web.pdf"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Inglés
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=16"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Historia
+                    </a>
+                  </td>
+                  <td>2hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=17"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Geografía
+                    </a>
+                  </td>
+                  <td>2hs</td>
+                </tr>
 
-              <tr>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=18"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Educación Física
-                  </a>
-                </td>
-                <td>3hs.</td>
-              </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=18"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Educación Física
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
 
-              <tr>
-                <th rowSpan="1" colSpan="2">
-                  Científico Tecnológica
-                </th>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=27"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Matemática
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
+                <tr>
+                  <th rowSpan="1" colSpan="2">
+                    Científico Tecnológica
+                  </th>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=27"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Matemática
+                    </a>
+                  </td>
+                  <td>4hs</td>
+                </tr>
 
-              <tr>
-                <th rowSpan="5">Técnica Específica</th>
-                <th rowSpan="2" colSpan="1">
-                  Desarrollo de Productos Informáticos
-                </th>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=36"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Laboratorio de Algoritmos y Estructura de datos
-                  </a>
-                </td>
-                <td>9hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=36"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Base de Datos
-                  </a>
-                </td>
-                <td>6hs</td>
-              </tr>
-              <tr>
-                <th rowSpan="2">Equipos, Instalaciones y Sistemas</th>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=38"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Organización de las Computadoras
-                  </a>
-                </td>
-                <td>7hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=39"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Lógica Computacional
-                  </a>
-                </td>
-                <td>3hs</td>
-              </tr>
-              <tr>
-                <th>Proyecto</th>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=41"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Proyecto I
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
-              <tr>
-                <th colSpan="3">Horas cátedra por semana</th>
-                <td>46hs</td>
-              </tr>
+                <tr>
+                  <th rowSpan="5">Técnica Específica</th>
+                  <th rowSpan="2" colSpan="1">
+                    Desarrollo de Productos Informáticos
+                  </th>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=36"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Laboratorio de Algoritmos y Estructura de datos
+                    </a>
+                  </td>
+                  <td>9hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=36"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Base de Datos
+                    </a>
+                  </td>
+                  <td>6hs</td>
+                </tr>
+                <tr>
+                  <th rowSpan="2">Equipos, Instalaciones y Sistemas</th>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=38"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Organización de las Computadoras
+                    </a>
+                  </td>
+                  <td>7hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=39"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Lógica Computacional
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <th>Proyecto</th>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=41"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Proyecto I
+                    </a>
+                  </td>
+                  <td>4hs</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th colSpan="3">Horas cátedra por semana</th>
+                  <td>46hs</td>
+                </tr>
+              </tfoot>
             </table>
           </div>
 
           <div className="tab-pane fade" role="tabpanel" id="tabla3">
             <table width="720px">
-              <tr>
-                <th colSpan="4">Quinto año</th>
-              </tr>
-              <tr>
-                <th colSpan="2">Campo de Formación</th>
-                <th>Unidad Curricular</th>
-                <th>Hs. por Semana</th>
-              </tr>
-              <tr>
-                <th rowSpan="4" colSpan="2">
-                  General
-                </th>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=22"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Lengua y Literatura
-                  </a>
-                </td>
-                <td>3hs.</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://buenosaires.gob.ar/areas/educacion/curricula/dle_web.pdf"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Inglés
-                  </a>
-                </td>
-                <td>3hs.</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=18"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Educación Física
-                  </a>
-                </td>
-                <td>3hs.</td>
-              </tr>
+              <thead>
+                <tr>
+                  <th colSpan="4">Quinto año</th>
+                </tr>
+                <tr>
+                  <th colSpan="2">Campo de Formación</th>
+                  <th>Unidad Curricular</th>
+                  <th>Hs. por Semana</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th rowSpan="4" colSpan="2">
+                    General
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=22"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Lengua y Literatura
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://buenosaires.gob.ar/areas/educacion/curricula/dle_web.pdf"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Inglés
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=18"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Educación Física
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
 
-              <tr>
-                <th rowSpan="3" colSpan="2">
-                  Científico Tecnológica
-                </th>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=27"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Matemática
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=32"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Economía y Gestión de las Organizaciones
-                  </a>
-                </td>
-                <td>3hs</td>
-              </tr>
-              <tr />
-              <tr>
-                <th rowSpan="6">Técnica Específica</th>
-                <th rowSpan="3" colSpan="1">
-                  Desarrollo de Productos Informáticos
-                </th>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=37"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Administración y Gestión de Base de datos
-                  </a>
-                </td>
-                <td>6hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=37"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Laboratorio de Programación Orientada a Objetos
-                  </a>
-                </td>
-                <td>9hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=37"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Análisis de Sistemas
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
-              <tr>
-                <th>Equipos, Instalaciones y Sistemas</th>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=37"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Redes
-                  </a>
-                </td>
-                <td>7hs</td>
-              </tr>
+                <tr>
+                  <th rowSpan="3" colSpan="2">
+                    Científico Tecnológica
+                  </th>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=27"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Matemática
+                    </a>
+                  </td>
+                  <td>4hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=32"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Economía y Gestión de las Organizaciones
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
+                <tr />
+                <tr>
+                  <th rowSpan="6">Técnica Específica</th>
+                  <th rowSpan="3" colSpan="1">
+                    Desarrollo de Productos Informáticos
+                  </th>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=37"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Administración y Gestión de Base de datos
+                    </a>
+                  </td>
+                  <td>6hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=37"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Laboratorio de Programación Orientada a Objetos
+                    </a>
+                  </td>
+                  <td>9hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=37"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Análisis de Sistemas
+                    </a>
+                  </td>
+                  <td>4hs</td>
+                </tr>
+                <tr>
+                  <th>Equipos, Instalaciones y Sistemas</th>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=37"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Redes
+                    </a>
+                  </td>
+                  <td>7hs</td>
+                </tr>
 
-              <tr>
-                <th>Proyecto</th>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=41"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Proyecto II
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
-              <tr>
-                <th colSpan="2">Horas cátedra por semana</th>
-                <td>46hs</td>
-              </tr>
+                <tr>
+                  <th>Proyecto</th>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=41"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Proyecto II
+                    </a>
+                  </td>
+                  <td>4hs</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th colSpan="3">Horas cátedra por semana</th>
+                  <td>46hs</td>
+                </tr>
+              </thead>
             </table>
           </div>
 
           <div className="tab-pane fade" role="tabpanel" id="tabla4">
             <table width="720px">
-              <tr>
-                <th colSpan="4">Sexto año</th>
-              </tr>
-              <tr>
-                <th colSpan="2">Campo de Formación</th>
-                <th>Unidad Curricular</th>
-                <th>Hs. por Semana</th>
-              </tr>
-              <tr>
-                <th rowSpan="5" colSpan="2">
-                  General
-                </th>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=21"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Ciudadanía y Trabajo
-                  </a>
-                </td>
-                <td>2hs.</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://buenosaires.gob.ar/areas/educacion/curricula/dle_web.pdf"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Inglés
-                  </a>
-                </td>
-                <td>3hs.</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=24"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Ciencia y Tecnología
-                  </a>
-                </td>
-                <td>2hs.</td>
-              </tr>
+              <thead>
+                <tr>
+                  <th colSpan="4">Sexto año</th>
+                </tr>
+                <tr>
+                  <th colSpan="2">Campo de Formación</th>
+                  <th>Unidad Curricular</th>
+                  <th>Hs. por Semana</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th rowSpan="5" colSpan="2">
+                    General
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=21"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Ciudadanía y Trabajo
+                    </a>
+                  </td>
+                  <td>2hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://buenosaires.gob.ar/areas/educacion/curricula/dle_web.pdf"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Inglés
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=24"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Ciencia y Tecnología
+                    </a>
+                  </td>
+                  <td>2hs</td>
+                </tr>
 
-              <tr>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=18"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Educación Física
-                  </a>
-                </td>
-                <td>3hs.</td>
-              </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=18"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Educación Física
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
 
-              <tr>
-                <th rowSpan="3" colSpan="2">
-                  Científico Tecnológica
-                </th>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=27"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Matemática
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
+                <tr>
+                  <th rowSpan="3" colSpan="2">
+                    Científico Tecnológica
+                  </th>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=27"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Matemática
+                    </a>
+                  </td>
+                  <td>4hs</td>
+                </tr>
 
-              <tr>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=32"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Gestión de los Procesos Productivos
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
-              <tr />
-              <tr>
-                <th rowSpan="4">Técnica Específica</th>
-                <th rowSpan="2" colSpan="1">
-                  Desarrollo de Productos Informáticos
-                </th>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=38"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Desarrollo de Sistemas
-                  </a>
-                </td>
-                <td>6hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=38"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Programación sobre Redes
-                  </a>
-                </td>
-                <td>6hs</td>
-              </tr>
-              <tr>
-                <th>Equipos, Instalaciones y Sistemas</th>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=40"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Administración de Sistemas y Redes
-                  </a>
-                </td>
-                <td>7hs</td>
-              </tr>
-              <tr>
-                <th>PP</th>
-                <td>
-                  <a
-                    href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=11"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Practicas Profesionalizantes
-                  </a>
-                </td>
-                <td>9hs</td>
-              </tr>
-              <tr>
-                <th colSpan="3">Horas cátedra por semana</th>
-                <td>46hs</td>
-              </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=32"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Gestión de los Procesos Productivos
+                    </a>
+                  </td>
+                  <td>4hs</td>
+                </tr>
+                <tr />
+                <tr>
+                  <th rowSpan="4">Técnica Específica</th>
+                  <th rowSpan="2" colSpan="1">
+                    Desarrollo de Productos Informáticos
+                  </th>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=38"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Desarrollo de Sistemas
+                    </a>
+                  </td>
+                  <td>6hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=38"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Programación sobre Redes
+                    </a>
+                  </td>
+                  <td>6hs</td>
+                </tr>
+                <tr>
+                  <th>Equipos, Instalaciones y Sistemas</th>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=40"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Administración de Sistemas y Redes
+                    </a>
+                  </td>
+                  <td>7hs</td>
+                </tr>
+                <tr>
+                  <th>PP</th>
+                  <td>
+                    <a
+                      href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=11"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Practicas Profesionalizantes
+                    </a>
+                  </td>
+                  <td>9hs</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th colSpan="3">Horas cátedra por semana</th>
+                  <td>46hs</td>
+                </tr>
+              </tfoot>
             </table>
           </div>
         </div>
@@ -738,7 +761,6 @@ function Computacion() {
               data-bs-parent="#accordionFlushExample"
             >
               <div className="accordion-body">
-                {' '}
                 <p>Técnico en Computación</p>
               </div>
             </div>
@@ -800,7 +822,6 @@ function Computacion() {
 
                 <ol>
                   <li>
-                    {' '}
                     Proyectar, producir, adaptar, implantar y mantener
                     aplicaciones informáticas.{' '}
                   </li>
@@ -819,7 +840,6 @@ function Computacion() {
                     de equipos y sistemas
                   </li>
                   <li>
-                    {' '}
                     Actuar en todos los casos bajo las normativas de seguridad
                     vigentes.
                   </li>

@@ -8,11 +8,10 @@ function Gao() {
           Gestión y Administración de las Organizaciones
         </h2>
       </div>
-      <div className="grid-section">
-        <div className="description-1" role="tabpanel">
-          <h3>Trayectoria Formativa y Cargas Horarias</h3>
-        </div>
-
+      <div className="description-1" role="tabpanel">
+        <h3>Trayectoria formativa y cargas horarias</h3>
+      </div>
+      <div className="flex-plan-estudio">
         <div className="lista_e_info">
           <div className="list-group" id="myList" role="tablist">
             <a
@@ -70,711 +69,733 @@ function Gao() {
             id="tabla1"
           >
             <table width="720px">
-              <tr>
-                <th colSpan="3">Tercer año</th>
-              </tr>
-              <tr>
-                <th>Campo de Formación</th>
-                <th>Unidad Curricular</th>
-                <th>Hs. por Semana</th>
-              </tr>
-              <tr>
-                <th rowSpan="7">General</th>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=23"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Lengua y Literatura
-                  </a>
-                </td>
-                <td>4hs.</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://buenosaires.gob.ar/areas/educacion/curricula/dle_web.pdf"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Inglés
-                  </a>
-                </td>
-                <td>3hs.</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=21"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Historia
-                  </a>
-                </td>
-                <td>3hs.</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=21"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Geografía
-                  </a>
-                </td>
-                <td>3hs.</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=21"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Educación Ciudadana
-                  </a>
-                </td>
-                <td>2hs.</td>
-              </tr>
+              <thead>
+                <tr>
+                  <th colSpan="3">Tercer año</th>
+                </tr>
+                <tr>
+                  <th>Campo de Formación</th>
+                  <th>Unidad Curricular</th>
+                  <th>Hs. por Semana</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th rowSpan="7">General</th>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=23"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Lengua y Literatura
+                    </a>
+                  </td>
+                  <td>4hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://buenosaires.gob.ar/areas/educacion/curricula/dle_web.pdf"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Inglés
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=21"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Historia
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=21"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Geografía
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=21"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Educación Ciudadana
+                    </a>
+                  </td>
+                  <td>2hs</td>
+                </tr>
 
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=21"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Educación Física
-                  </a>
-                </td>
-                <td>3hs.</td>
-              </tr>
-              <tr>
-                <th rowSpan="5">Científico Tecnológica</th>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=26"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Matemática
-                  </a>
-                </td>
-                <td>5hs</td>
-              </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=21"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Educación Física
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <th rowSpan="5">Científico Tecnológica</th>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=26"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Matemática
+                    </a>
+                  </td>
+                  <td>5hs</td>
+                </tr>
 
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=27"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Física
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=27"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Física
+                    </a>
+                  </td>
+                  <td>4hs</td>
+                </tr>
 
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=28"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Química
-                  </a>
-                </td>
-                <td>3hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=27"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Tecnología de la Representación
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=28">
-                    Taller de Informática Aplicada y del Control
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
-              <tr>
-                <th>Técnica Específica</th>
-                <td>
-                  <a href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=39">
-                    Taller de la especialidad
-                  </a>
-                </td>
-                <td>8hs</td>
-              </tr>
-              <tr>
-                <th colSpan="2">Horas cátedra por semana</th>
-                <td>46hs</td>
-              </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=28"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Química
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=27"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Tecnología de la Representación
+                    </a>
+                  </td>
+                  <td>4hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://huergo.edu.ar/docs/perfilprocomputacion_anexo.pdf#page=28">
+                      Taller de Informática Aplicada y del Control
+                    </a>
+                  </td>
+                  <td>4hs</td>
+                </tr>
+                <tr>
+                  <th>Técnica Específica</th>
+                  <td>
+                    <a href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=39">
+                      Taller de la especialidad
+                    </a>
+                  </td>
+                  <td>8hs</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th colSpan="2">Horas cátedra por semana</th>
+                  <td>46hs</td>
+                </tr>
+              </tfoot>
             </table>
           </div>
 
           <div className="tab-pane fade" role="tabpanel" id="tabla2">
             <table width="720px">
-              <tr>
-                <th colSpan="4">Cuarto año</th>
-              </tr>
-              <tr>
-                <th colSpan="2">Campo de Formación</th>
-                <th>Unidad Curricular</th>
-                <th>Hs. por Semana</th>
-              </tr>
-              <tr>
-                <th rowSpan="5" colSpan="2">
-                  General
-                </th>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=23"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Lengua y Literatura
-                  </a>
-                </td>
-                <td>3hs.</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://buenosaires.gob.ar/areas/educacion/curricula/dle_web.pdf"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Inglés
-                  </a>
-                </td>
-                <td>3hs.</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=23"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Ciudadanía y Trabajo
-                  </a>
-                </td>
-                <td>2hs.</td>
-              </tr>
+              <thead>
+                <tr>
+                  <th colSpan="4">Cuarto año</th>
+                </tr>
+                <tr>
+                  <th colSpan="2">Campo de Formación</th>
+                  <th>Unidad Curricular</th>
+                  <th>Hs. por Semana</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th rowSpan="5" colSpan="2">
+                    General
+                  </th>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=23"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Lengua y Literatura
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://buenosaires.gob.ar/areas/educacion/curricula/dle_web.pdf"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Inglés
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=23"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Ciudadanía y Trabajo
+                    </a>
+                  </td>
+                  <td>2hs</td>
+                </tr>
 
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=21"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Educación Física
-                  </a>
-                </td>
-                <td>3hs.</td>
-              </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=21"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Educación Física
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
 
-              <tr>
-                <th rowSpan="2" colSpan="2">
-                  Científico Tecnológica
-                </th>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=26"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Matemática
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=28"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Químmica Aplicada
-                  </a>
-                </td>
-                <td>3hs</td>
-              </tr>
+                <tr>
+                  <th rowSpan="2" colSpan="2">
+                    Científico Tecnológica
+                  </th>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=26"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Matemática
+                    </a>
+                  </td>
+                  <td>4hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=28"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Química Aplicada
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
 
-              <tr>
-                <th rowSpan="7" colSpan="2">
-                  Técnica Específica
-                </th>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=31"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Computación Aplicada I
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=39"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Contabilidad I
-                  </a>
-                </td>
-                <td>6hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=31"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Introducción a la Economía
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=32"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Historia de la Industria y el Comercio{' '}
-                  </a>
-                </td>
-                <td>3hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=32"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Matemática Financiera
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=33"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Teoría de las Organizaciones
-                  </a>
-                </td>
-                <td>3hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=39"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Taller Administrativo-Contable I
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
-              <tr>
-                <th colSpan="3">Horas cátedra por semana</th>
-                <td>46hs</td>
-              </tr>
+                <tr>
+                  <th rowSpan="7" colSpan="2">
+                    Técnica Específica
+                  </th>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=31"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Computación Aplicada I
+                    </a>
+                  </td>
+                  <td>4hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=39"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Contabilidad I
+                    </a>
+                  </td>
+                  <td>6hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=31"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Introducción a la Economía
+                    </a>
+                  </td>
+                  <td>4hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=32"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Historia de la Industria y el Comercio
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=32"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Matemática Financiera
+                    </a>
+                  </td>
+                  <td>4hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=33"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Teoría de las Organizaciones
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=39"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Taller Administrativo-Contable I
+                    </a>
+                  </td>
+                  <td>4hs</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th colSpan="3">Horas cátedra por semana</th>
+                  <td>46hs</td>
+                </tr>
+              </tfoot>
             </table>
           </div>
 
           <div className="tab-pane fade" role="tabpanel" id="tabla3">
             <table width="720px">
-              <tr>
-                <th colSpan="4">Quinto año</th>
-              </tr>
-              <tr>
-                <th>Campo de Formación</th>
-                <th>Unidad Curricular</th>
-                <th>Hs. por Semana</th>
-              </tr>
-              <tr>
-                <th rowSpan="4">General</th>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=23"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Lengua y Literatura
-                  </a>
-                </td>
-                <td>3hs.</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://buenosaires.gob.ar/areas/educacion/curricula/dle_web.pdf"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Inglés
-                  </a>
-                </td>
-                <td>3hs.</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=21"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Educación Física
-                  </a>
-                </td>
-                <td>3hs.</td>
-              </tr>
+              <thead>
+                <tr>
+                  <th colSpan="4">Quinto año</th>
+                </tr>
+                <tr>
+                  <th>Campo de Formación</th>
+                  <th>Unidad Curricular</th>
+                  <th>Hs. por Semana</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th rowSpan="4">General</th>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=23"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Lengua y Literatura
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://buenosaires.gob.ar/areas/educacion/curricula/dle_web.pdf"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Inglés
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=21"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Educación Física
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
 
-              <tr>
-                <th rowSpan="2">Científico Tecnológica</th>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=26"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Matemática
-                  </a>
-                </td>
-                <td>3hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=29"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Economía y Gestión de las Organizaciones
-                  </a>
-                </td>
-                <td>3hs</td>
-              </tr>
-              <tr>
-                <th rowSpan="8">Técnica Específica</th>
+                <tr>
+                  <th rowSpan="2">Científico Tecnológica</th>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=26"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Matemática
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=29"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Economía y Gestión de las Organizaciones
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <th rowSpan="8">Técnica Específica</th>
 
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=33"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Computación Aplicada II
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=33"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Introducción al derecho
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=34"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Geografía Económica Argentina
-                  </a>
-                </td>
-                <td>3hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=39"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Contabilidad II
-                  </a>
-                </td>
-                <td>6hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=34"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Costos
-                  </a>
-                </td>
-                <td>3hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=34"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Organización de la Producción
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=34"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Psicología de las Organizaciones
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=39"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Taller Administrativo-Contable II
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
-
-              <tr>
-                <th colSpan="2">Horas cátedra por semana</th>
-                <td>46hs</td>
-              </tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=33"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Computación Aplicada II
+                    </a>
+                  </td>
+                  <td>4hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=33"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Introducción al derecho
+                    </a>
+                  </td>
+                  <td>4hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=34"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Geografía Económica Argentina
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=39"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Contabilidad II
+                    </a>
+                  </td>
+                  <td>6hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=34"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Costos
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=34"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Organización de la Producción
+                    </a>
+                  </td>
+                  <td>4hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=34"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Psicología de las Organizaciones
+                    </a>
+                  </td>
+                  <td>4hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=39"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Taller Administrativo-Contable II
+                    </a>
+                  </td>
+                  <td>4hs</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th colSpan="2">Horas cátedra por semana</th>
+                  <td>46hs</td>
+                </tr>
+              </tfoot>
             </table>
           </div>
 
           <div className="tab-pane fade" role="tabpanel" id="tabla4">
             <table width="720px">
-              <tr>
-                <th colSpan="4">Sexto año</th>
-              </tr>
-              <tr>
-                <th>Campo de Formación</th>
-                <th>Unidad Curricular</th>
-                <th>Hs. por Semana</th>
-              </tr>
-              <tr>
-                <th rowSpan="4">General</th>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=25"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Ciencia y Tecnología
-                  </a>
-                </td>
-                <td>2hs.</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=22"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Inglés
-                  </a>
-                </td>
-                <td>2hs.</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=21"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Educación Física
-                  </a>
-                </td>
-                <td>3hs.</td>
-              </tr>
+              <thead>
+                <tr>
+                  <th colSpan="4">Sexto año</th>
+                </tr>
+                <tr>
+                  <th>Campo de Formación</th>
+                  <th>Unidad Curricular</th>
+                  <th>Hs. por Semana</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th rowSpan="4">General</th>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=25"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Ciencia y Tecnología
+                    </a>
+                  </td>
+                  <td>2hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=22"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Inglés
+                    </a>
+                  </td>
+                  <td>2hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=21"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Educación Física
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
 
-              <tr>
-                <th rowSpan="2">Científico Tecnológica</th>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=27"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Matemática
-                  </a>
-                </td>
-                <td>3hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=29"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Gestión de los Procesos Productivos
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
-              <tr>
-                <th rowSpan="8">Técnica Específica</th>
+                <tr>
+                  <th rowSpan="2">Científico Tecnológica</th>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=27"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Matemática
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=29"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Gestión de los Procesos Productivos
+                    </a>
+                  </td>
+                  <td>4hs</td>
+                </tr>
+                <tr>
+                  <th rowSpan="8">Técnica Específica</th>
 
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=35"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Computación Aplicada III
-                  </a>
-                </td>
-                <td>2hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=36"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Derecho Comercial Administrativo
-                  </a>
-                </td>
-                <td>2hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=36"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Bancos y Finanzas
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=36"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Estados Contables
-                  </a>
-                </td>
-                <td>5hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=37"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Impuestos
-                  </a>
-                </td>
-                <td>3hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=37"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Marketing
-                  </a>
-                </td>
-                <td>4hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=38"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Recursos Humanos
-                  </a>
-                </td>
-                <td>3hs</td>
-              </tr>
-              <tr>
-                <td>
-                  <a
-                    href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=39"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Prácticas Profesionalizantes
-                  </a>
-                </td>
-                <td>9hs</td>
-              </tr>
-
-              <tr>
-                <th colSpan="2">Horas cátedra por semana</th>
-                <td>46hs</td>
-              </tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=35"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Computación Aplicada III
+                    </a>
+                  </td>
+                  <td>2hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=36"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Derecho Comercial Administrativo
+                    </a>
+                  </td>
+                  <td>2hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=36"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Bancos y Finanzas
+                    </a>
+                  </td>
+                  <td>4hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=36"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Estados Contables
+                    </a>
+                  </td>
+                  <td>5hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=37"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Impuestos
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=37"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Marketing
+                    </a>
+                  </td>
+                  <td>4hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=38"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Recursos Humanos
+                    </a>
+                  </td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a
+                      href="https://ade.et16esp.edu.ar/wp-content/uploads/2015/06/res_megc_2758_14a-ADE.pdf#page=39"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Prácticas Profesionalizantes
+                    </a>
+                  </td>
+                  <td>9hs</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th colSpan="2">Horas cátedra por semana</th>
+                  <td>46hs</td>
+                </tr>
+              </tfoot>
             </table>
           </div>
         </div>
@@ -792,7 +813,6 @@ function Gao() {
                 aria-expanded="false"
                 aria-controls="flush-collapseOne"
               >
-                {' '}
                 Título que Otorga
               </button>
             </h2>
@@ -803,7 +823,6 @@ function Gao() {
               data-bs-parent="#accordionFlushExample"
             >
               <div className="accordion-body">
-                {' '}
                 <p>Técnico en Gestión y Administración de las Organizaciones</p>
               </div>
             </div>

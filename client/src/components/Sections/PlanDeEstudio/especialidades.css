@@ -1,66 +1,50 @@
-.root {
-  margin: 0 auto;
-  padding: 0 auto;
-}
-
-.grid-section {
-  display: grid;
-  place-items: center;
+.flex-plan-estudio {
+  display: flex;
+  justify-content: center;
+  margin: 0 40px;
 }
 
 .description {
-  grid-column-start: 1;
-  grid-column-end: 5;
   margin: 43px;
   position: static;
 }
 
 .description-1 {
-  margin: 0 auto;
-  grid-column-start: 1;
-  grid-column-end: 7;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  display: flex;
+  justify-content: center;
   color: #2b0c5a;
 }
 
 .list-group {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 10px;
   border-radius: none;
-  width: 120%;
-  align-self: flex-start;
   padding-top: 20px;
   text-align: center;
 }
 
 .tab-content {
-  grid-column-start: 2;
-  grid-column-end: 7;
-  grid-row-start: 2;
-  grid-row-end: 8;
+  margin: 0 5rem;
   padding-top: 20px;
 }
 
 .lista_e_info {
-  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .mas-info a {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
   margin: 0 auto;
-  color: #000;
+  color: #00f;
+}
+
+.mas-info a:hover {
+  color: #66f;
 }
 
 .mas-info {
-  width: 120%;
-  height: 50%;
   background-color: #fff;
   justify-content: center;
   padding: 20px;
@@ -76,6 +60,11 @@
 .list-group-item:first-child,
 .list-group-item:last-child {
   border-radius: 0%;
+}
+
+.list-group-item:active, .list-group-item:focus {
+  background-color: #2b0c5a;
+  color: #fff;
 }
 
 .list-group-item.list-group-item {
@@ -105,36 +94,34 @@ button {
 
 .tab-pane {
   display: grid;
-  grid-column-start: 1;
-  grid-column-end: 5;
   place-items: center;
-  padding-right: 30px;
 }
 
-table {
+.tab-pane > table {
+  border: 1rem solid #b2d8fa;
   text-align: center;
   margin: 0 auto;
-  grid-column-start: 1;
-  grid-column-end: 5;
-  border: 15px solid #2b0c5a;
 }
 
 .mostrar {
   display: block;
 }
 
-h3 {
-  grid-column-start: 1;
-  grid-column-end: 5;
-  padding-top: 20px;
-}
-
 th,
 td {
-  padding: 5px;
+  padding: 3px 5px;
   text-align: center;
   background-color: #fff;
-  border: 9px solid #b2d8fa;
+  border: 5px solid #b2d8fa;
+  color: #2b0c5a;
+}
+
+td > a {
+  color: #00f;
+}
+
+td > a:hover {
+  color: #66f;
 }
 
 #tabla1,
@@ -143,7 +130,13 @@ td {
 #tabla4 {
   text-align: center;
   margin: 0 auto;
-  grid-column-start: 1;
-  grid-column-end: 5;
-  margin-bottom: 20px;
+}
+
+.accordion-button {
+  color: #2b0c5a;
+  font-weight: 700;
+}
+
+.collapse{
+  visibility: visible !important;
 }
