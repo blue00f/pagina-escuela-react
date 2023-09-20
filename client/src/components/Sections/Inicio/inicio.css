@@ -1,8 +1,10 @@
-.grid{
-    display: block;
+@media (max-width: 480px) {
+  .grid {
+    display: block !important;
     padding: 2rem;
-}
+  }
 
-.flex{
+  .flex {
     margin-bottom: 3rem;
+  }
 }

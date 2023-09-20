@@ -1,6 +1,7 @@
 import Carousel from '../../Carousel/Carousel'
 import CardInicio from '../../CardInicio/CardInicio'
 import './inicio.css'
+
 function Inicio() {
   return (
     <section className="content-container">

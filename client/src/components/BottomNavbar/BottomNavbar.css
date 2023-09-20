@@ -29,33 +29,45 @@
     fill: var(--blanco);
   }
 
-  .container-items-navbar a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
+  .container-items-navbar  {
+     
+    text-align: center;
+    padding:3rem;
   }
-
+   
+   
   .icon-button {
     width: 2.5rem;
     background: transparent;
     fill: #2b0c5a;
     border: none;
     padding: 0;
-    margin-right: 4rem;
-    margin-left:3rem;
+    margin-right: 0 1rem;
+   
   }
 
-  .container-items-navbar {
-    box-sizing: content-box;
+  .container-items-navbar a{
+   
+    width: 2.5rem;
+    background: transparent;
+    fill: #2b0c5a;
+    border: none;
+    padding: 0;
+    margin-right: 0 1rem;
+     
+     
   }
 
   .items {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1rem;
+    
   }
 
   .icon-navbar {
+    width: 2rem;
     fill: #2b0c5a;
   }
 
