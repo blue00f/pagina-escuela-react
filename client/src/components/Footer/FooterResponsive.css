@@ -2,7 +2,7 @@
 @media (max-width: 480px) {
   
   .header{
-    display: none;
+    display: none  !important;
   }
   /* Footer Resposive Design  */
 
