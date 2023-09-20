@@ -1,9 +1,9 @@
-import { ArrowCarouselRight } from '../Icons/Icons';
-import { ArrowCarouselLeft } from '../Icons/Icons';
-import { Link } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.min.js';
-import './Carousel.css';
+import { ArrowCarouselRight } from '../Icons/Icons'
+import { ArrowCarouselLeft } from '../Icons/Icons'
+import { Link } from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.min.js'
+import './Carousel.css'
 
 function Carousel() {
   return (
@@ -207,7 +207,7 @@ function Carousel() {
         </button>
       </div>
     </div>
-  );
+  )
 }
 
-export default Carousel;
+export default Carousel

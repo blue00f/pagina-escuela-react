@@ -1,3 +1,5 @@
+import './especialidades.css'
+
 function CicloBasico() {
   return (
     <section className="content-container">
@@ -5,11 +7,10 @@ function CicloBasico() {
         <h2 className="titulo-seccion">Ciclo Básico</h2>
       </div>
 
-      <div className="grid-section">
-        <div className="description-1" role="tabpanel">
-          <h3>Trayectoria Formativa y Cargas Horarias</h3>
-        </div>
-
+      <div className="description-1" role="tabpanel">
+        <h3>Trayectoria formativa y cargas horarias</h3>
+      </div>
+      <div className="flex-plan-estudio">
         <div className="lista_e_info">
           <div className="list-group" id="myList" role="tablist">
             <a
@@ -49,140 +50,152 @@ function CicloBasico() {
             id="tabla1"
           >
             <table width="720px">
-              <tr>
-                <th colSpan="4">Primer año</th>
-              </tr>
-              <tr>
-                <th colSpan="2">Campo de Formación</th>
-                <th>Unidad Curricular</th>
-                <th>Hs. por Semana</th>
-              </tr>
-              <tr>
-                <th rowSpan="9" colSpan="2">
-                  General
-                </th>
-              </tr>
-              <tr>
-                <td>Lengua y Literatura</td>
-                <td>4hs.</td>
-              </tr>
-              <tr>
-                <td>Inglés</td>
-                <td>3hs.</td>
-              </tr>
-              <tr>
-                <td>Historia</td>
-                <td>3hs.</td>
-              </tr>
-              <tr>
-                <td>Geografía</td>
-                <td>3hs.</td>
-              </tr>
-              <tr>
-                <td>Educación Ciudadana</td>
-                <td>2hs.</td>
-              </tr>
-              <tr>
-                <td>Educación Artística</td>
-                <td>2hs.</td>
-              </tr>
-              <tr>
-                <td>Educación Física</td>
-                <td>3hs.</td>
-              </tr>
-              <tr>
-                <td>Biología</td>
-                <td>2hs.</td>
-              </tr>
-              <tr>
-                <th rowSpan="3">Científico Tecnológica</th>
-                <th rowSpan="1">Área de Ciencias Básicas y Matemática</th>
-                <td>Matemática</td>
-                <td>6hs</td>
-              </tr>
-              <tr>
-                <th rowSpan="2">Área de Tecnologías Generales</th>
-                <td>Tecnología de la Representación</td>
-                <td>4hs</td>
-              </tr>
-              <tr>
-                <td>Taller</td>
-                <td>12hs</td>
-              </tr>
-              <tr>
-                <th colSpan="3">Horas cátedra por semana</th>
-                <td>44hs</td>
-              </tr>
+              <thead>
+                <tr>
+                  <th colSpan="4">Primer año</th>
+                </tr>
+                <tr>
+                  <th colSpan="2">Campo de Formación</th>
+                  <th>Unidad Curricular</th>
+                  <th>Hs. por Semana</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th rowSpan="9" colSpan="2">
+                    General
+                  </th>
+                </tr>
+                <tr>
+                  <td>Lengua y Literatura</td>
+                  <td>4hs</td>
+                </tr>
+                <tr>
+                  <td>Inglés</td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>Historia</td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>Geografía</td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>Educación Ciudadana</td>
+                  <td>2hs</td>
+                </tr>
+                <tr>
+                  <td>Educación Artística</td>
+                  <td>2hs</td>
+                </tr>
+                <tr>
+                  <td>Educación Física</td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>Biología</td>
+                  <td>2hs</td>
+                </tr>
+                <tr>
+                  <th rowSpan="3">Científico Tecnológica</th>
+                  <th rowSpan="1">Área de Ciencias Básicas y Matemática</th>
+                  <td>Matemática</td>
+                  <td>6hs</td>
+                </tr>
+                <tr>
+                  <th rowSpan="2">Área de Tecnologías Generales</th>
+                  <td>Tecnología de la Representación</td>
+                  <td>4hs</td>
+                </tr>
+                <tr>
+                  <td>Taller</td>
+                  <td>12hs</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th colSpan="3">Horas cátedra por semana</th>
+                  <td>44hs</td>
+                </tr>
+              </tfoot>
             </table>
           </div>
 
           <div className="tab-pane fade" role="tabpanel" id="tabla2">
             <table width="720px">
-              <tr>
-                <th colSpan="4">Segundo año</th>
-              </tr>
-              <tr>
-                <th colSpan="2">Campo de Formación</th>
-                <th>Unidad Curricular</th>
-                <th>Hs. por Semana</th>
-              </tr>
-              <tr>
-                <th rowSpan="8" colSpan="2">
-                  General
-                </th>
-              </tr>
-              <tr>
-                <td>Lengua y Literatura</td>
-                <td>4hs.</td>
-              </tr>
-              <tr>
-                <td>Inglés</td>
-                <td>3hs.</td>
-              </tr>
-              <tr>
-                <td>Historia</td>
-                <td>3hs.</td>
-              </tr>
-              <tr>
-                <td>Geografía</td>
-                <td>3hs.</td>
-              </tr>
-              <tr>
-                <td>Educación Ciudadana</td>
-                <td>2hs.</td>
-              </tr>
+              <thead>
+                <tr>
+                  <th colSpan="4">Segundo año</th>
+                </tr>
+                <tr>
+                  <th colSpan="2">Campo de Formación</th>
+                  <th>Unidad Curricular</th>
+                  <th>Hs. por Semana</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th rowSpan="8" colSpan="2">
+                    General
+                  </th>
+                </tr>
+                <tr>
+                  <td>Lengua y Literatura</td>
+                  <td>4hs</td>
+                </tr>
+                <tr>
+                  <td>Inglés</td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>Historia</td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>Geografía</td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>Educación Ciudadana</td>
+                  <td>2hs</td>
+                </tr>
 
-              <tr>
-                <td>Educación Física</td>
-                <td>3hs.</td>
-              </tr>
-              <tr>
-                <td>Biología</td>
-                <td>3hs.</td>
-              </tr>
-              <tr>
-                <th rowSpan="4">Científico Tecnológica</th>
-                <th rowSpan="2">Área de Ciencias Básicas y Matemática</th>
-                <td>Matemática</td>
-                <td>6hs</td>
-              </tr>
-              <tr>
-                <td>Física</td>
-                <td>4hs</td>
-              </tr>
-              <tr>
-                <th rowSpan="2">Área de Tecnologías Generales</th>
-                <td>Tecnología de la Representación</td>
-                <td>3hs</td>
-              </tr>
-              <tr>
-                <td>Taller</td>
-                <td>12hs</td>
-              </tr>
-              <tr>
-                <th colSpan="3">Horas cátedra por semana</th>
-                <td>46hs</td>
-              </tr>
+                <tr>
+                  <td>Educación Física</td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>Biología</td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <th rowSpan="4">Científico Tecnológica</th>
+                  <th rowSpan="2">Área de Ciencias Básicas y Matemática</th>
+                  <td>Matemática</td>
+                  <td>6hs</td>
+                </tr>
+                <tr>
+                  <td>Física</td>
+                  <td>4hs</td>
+                </tr>
+                <tr>
+                  <th rowSpan="2">Área de Tecnologías Generales</th>
+                  <td>Tecnología de la Representación</td>
+                  <td>3hs</td>
+                </tr>
+                <tr>
+                  <td>Taller</td>
+                  <td>12hs</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th colSpan="3">Horas cátedra por semana</th>
+                  <td>46hs</td>
+                </tr>
+              </tfoot>
             </table>
           </div>
         </div>
@@ -199,8 +212,7 @@ function CicloBasico() {
                 aria-expanded="false"
                 aria-controls="flush-collapseOne"
               >
-                {' '}
-                Definición{' '}
+                Definición
               </button>
             </h2>
             <div
@@ -210,7 +222,6 @@ function CicloBasico() {
               data-bs-parent="#accordionFlushExample"
             >
               <div className="accordion-body">
-                {' '}
                 <p>
                   El “Primer Ciclo de la Modalidad Técnico Profesional de Nivel
                   Secundario”, se implementó en todas las Escuelas Técnicas
@@ -235,8 +246,7 @@ function CicloBasico() {
                 aria-expanded="false"
                 aria-controls="flush-collapseTwo"
               >
-                {' '}
-                Capacidades{' '}
+                Capacidades
               </button>
             </h2>
             <div
@@ -253,7 +263,6 @@ function CicloBasico() {
 
                 <ul>
                   <li>
-                    {' '}
                     Conocer los sistemas socio-productivos locales, su
                     constitución histórica y actual e interpretando la
                     estructura de productos y procesos tecnológicos, en el marco
@@ -265,7 +274,6 @@ function CicloBasico() {
                     técnico y tecnológico,considerando el alcance de las mismas.
                   </li>
                   <li>
-                    {' '}
                     Buscar, seleccionar y clasificar la información tecnológica
                     representada por diversos medios, comunicándose de forma
                     oral y escrita con el lenguaje tecnológico apropiado.
@@ -300,7 +308,7 @@ function CicloBasico() {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default CicloBasico;
+export default CicloBasico

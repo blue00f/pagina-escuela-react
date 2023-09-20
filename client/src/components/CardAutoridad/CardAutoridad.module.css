@@ -1,0 +1,18 @@
+.contenedorImgAutoridad {
+    text-align: center;
+}
+
+.imagenAutoridad {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 25%);
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.contenedorImgAutoridad > p {
+    font-size: 20px;
+    line-height: 25px;
+    color: #2B0C5A;
+}

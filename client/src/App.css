@@ -41,6 +41,12 @@ p { margin: 0; }
 
 a { text-decoration: none; }
 
+h3 {
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
 /* ---------------------------------------- */
 /* Estilos para los titulos de cada seccion */
 /* ---------------------------------------- */
@@ -78,8 +84,6 @@ a { text-decoration: none; }
 .content-container {
   grid-area: content;
 }
-
-
 
 @media (max-width: 1470px) {
   .grid-container {

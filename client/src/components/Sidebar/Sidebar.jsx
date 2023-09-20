@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 import {
   HomeIcon,
@@ -6,11 +6,11 @@ import {
   InstitutionIcon,
   BookIcon,
   QuestionIcon,
-} from '../Icons/Icons.jsx';
+} from '../Icons/Icons.jsx'
 
-import SidebarTop from './SidebarTop.jsx';
-import SidebarLink from './SidebarLink.jsx';
-import './Sidebar.css';
+import SidebarTop from './SidebarTop.jsx'
+import SidebarLink from './SidebarLink.jsx'
+import './Sidebar.css'
 
 const sections = [
   {
@@ -23,7 +23,7 @@ const sections = [
   {
     icon: <PublicationIcon />,
     label: 'Publicaciones',
-    url: 'publicacionesSL',
+    url: 'publicaciones',
     hasSubsections: false,
     subsections: [],
   },
@@ -34,7 +34,7 @@ const sections = [
     subsections: [
       { label: 'Nuestra historia', url: 'nuestra-historia' },
       { label: 'Autoridades', url: 'autoridades' },
-      /*{ label: 'Galería', url: 'galeria' },*/
+      { label: 'Galería', url: 'galeria' },
       { label: 'Inscripciones', url: 'inscripciones' },
     ],
   },
@@ -55,7 +55,7 @@ const sections = [
     hasSubsections: false,
     subsections: [],
   },
-];
+]
 
 function Sidebar({ isLoggedIn, handleLogout }) {
   return (
@@ -91,7 +91,7 @@ function Sidebar({ isLoggedIn, handleLogout }) {
         </ul>
       </nav>
     </div>
-  );
+  )
 }
 
-export default Sidebar;
+export default Sidebar

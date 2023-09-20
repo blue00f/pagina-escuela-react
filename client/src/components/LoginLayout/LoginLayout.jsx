@@ -1,28 +1,28 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './LoginLayout.css';
-import { useState } from 'react';
-import Swal from 'sweetalert2';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './LoginLayout.css'
+import { useState } from 'react'
+import Swal from 'sweetalert2'
 
 // const URL_LOCAL = 'http://localhost:3001/posts';
-const URL_POSTS = 'https://pagina-escuela-react-production.up.railway.app';
+const URL_POSTS = 'https://pagina-escuela-react-production.up.railway.app'
 
 function LoginLayout({ isLoggedIn, setIsLoggedIn }) {
-  const [Username, setUsername] = useState('');
-  const [Password, setPassword] = useState('');
-  const [message, setMessage] = useState(''); // Declaración del estado y la función setMessage
+  const [Username, setUsername] = useState('')
+  const [Password, setPassword] = useState('')
+  const [message, setMessage] = useState('') // Declaración del estado y la función setMessage
 
   const handleUsernameChange = (event) => {
-    setUsername(event.target.value);
-  };
+    setUsername(event.target.value)
+  }
 
   const handlePasswordChange = (event) => {
-    setPassword(event.target.value);
-  };
+    setPassword(event.target.value)
+  }
 
   const handleSubmit = async (event) => {
-    event.preventDefault();
+    event.preventDefault()
 
-    setMessage('Enviando solicitud...');
+    setMessage('Enviando solicitud...')
 
     try {
       const response = await fetch(`${URL_POSTS}/login`, {
@@ -34,34 +34,34 @@ function LoginLayout({ isLoggedIn, setIsLoggedIn }) {
           Username,
           Password,
         }),
-      });
+      })
 
-      const data = await response.json();
+      const data = await response.json()
 
       if (response.ok) {
         Swal.fire({
           icon: 'success',
           title: 'Inicio de Sesión Exitoso',
           text: data.message,
-        });
-        setIsLoggedIn(true);
-        setMessage(data.message);
-        setUsername(data.username);
+        })
+        setIsLoggedIn(true)
+        setMessage(data.message)
+        setUsername(data.username)
       } else {
         Swal.fire({
           icon: 'error',
           title: 'Inicio de Sesión Fallido',
           text: data.message,
-        });
-        setIsLoggedIn(false);
-        setMessage(data.message);
+        })
+        setIsLoggedIn(false)
+        setMessage(data.message)
       }
-      setMessage(data.message); // Actualiza el estado del mensaje con la respuesta del servidor
+      setMessage(data.message) // Actualiza el estado del mensaje con la respuesta del servidor
     } catch (error) {
-      setMessage('Error en la solicitud: ' + error.message);
-      console.error('Error al enviar la solicitud:', error);
+      setMessage('Error en la solicitud: ' + error.message)
+      console.error('Error al enviar la solicitud:', error)
     }
-  };
+  }
   return (
     <div className="d-flex justify-content-center align-items-center vh-100">
       <div className="card" style={{ maxWidth: '500px' }}>
@@ -96,7 +96,7 @@ function LoginLayout({ isLoggedIn, setIsLoggedIn }) {
         </form>
       </div>
     </div>
-  );
+  )
 }
 
-export default LoginLayout;
+export default LoginLayout

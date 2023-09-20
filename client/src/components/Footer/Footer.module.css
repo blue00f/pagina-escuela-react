@@ -1,0 +1,90 @@
+.footerContainer {
+  grid-area: footer;
+  background-color: #2b0c5a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--blanco);
+  background: rgb(43, 12, 90);
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(43, 12, 90, 1) 0%,
+    rgba(26, 0, 65, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(43, 12, 90, 1) 0%,
+    rgba(26, 0, 65, 1) 100%
+  );
+  background: linear-gradient(
+    45deg,
+    rgba(43, 12, 90, 1) 0%,
+    rgba(26, 0, 65, 1) 100%
+  );
+}
+
+.footerMenus {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footerMenus .footerContentContainer:nth-of-type(1) {
+  margin-right: 300px;
+}
+
+.footerContentContainer {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 80px 40px 60px 40px;
+}
+
+.logoFooter {
+  margin-bottom: 25px;
+  align-items: center;
+}
+
+.itemFooter {
+  margin: 0.5rem 0;
+  font-size: 14px;
+  color: var(--gris);
+  color: var(--celeste-claro);
+}
+
+.footerInfo {
+  font-size: 12px;
+  color: var(--gris);
+  margin: 0.1rem 0;
+}
+
+.menuTitle {
+  margin-bottom: 27px;
+  font-size: 16px;
+}
+
+.website-logo {
+  margin: 0px auto;
+  margin-bottom: 1.2rem;
+  font-size: calc(1vw + 20px);
+}
+
+.menuItemFooter {
+  margin: 0.5rem 0;
+  font-size: 14px;
+  color: var(--gris);
+}
+
+.menuItemFooter:hover {
+  color: var(--celeste-claro);
+}
+
+.socialContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 70%;
+  padding: 20px;
+}

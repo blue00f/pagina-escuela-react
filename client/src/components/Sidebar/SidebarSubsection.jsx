@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 function SidebarSubsection({ subsections }) {
   return (
@@ -14,7 +14,7 @@ function SidebarSubsection({ subsections }) {
         </li>
       ))}
     </ul>
-  );
+  )
 }
 
-export default SidebarSubsection;
+export default SidebarSubsection

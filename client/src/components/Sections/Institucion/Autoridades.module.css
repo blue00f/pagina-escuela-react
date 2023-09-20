@@ -1,0 +1,12 @@
+.contenedorImagenes {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 80px 0;
+}
+
+@media (max-width: 768px){
+  .contenedorImagenes {
+    display: block;
+  }
+}

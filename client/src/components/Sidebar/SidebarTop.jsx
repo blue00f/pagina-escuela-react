@@ -1,5 +1,5 @@
-import { RectangleIcon } from '../Icons/Icons.jsx';
-import { Link } from 'react-router-dom';
+import { RectangleIcon } from '../Icons/Icons.jsx'
+import { Link } from 'react-router-dom'
 
 function SidebarTop() {
   return (
@@ -12,7 +12,7 @@ function SidebarTop() {
         </p>
       </Link>
     </>
-  );
+  )
 }
 
-export default SidebarTop;
+export default SidebarTop

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import {
   CloseIcon,
   HomeIcon,
@@ -7,10 +7,10 @@ import {
   BookIcon,
   QuestionIcon,
   HamburguerIcon,
-} from '../Icons/Icons.jsx';
-import './SidebarResponsive.css';
+} from '../Icons/Icons.jsx'
+import './SidebarResponsive.css'
 
-function SidebarResponsive({isLoggedIn,handleLogout }) {
+function SidebarResponsive({ isLoggedIn, handleLogout }) {
   return (
     <div className="header">
       <button
@@ -25,25 +25,24 @@ function SidebarResponsive({isLoggedIn,handleLogout }) {
       <Link className="container-logo" to="/">
         <img src="et7.png" width="45" height="61" alt="Logo escuela" />
         <p className="texto-bold texto-violeta">
-          ESCUELA TÉCNICA DOLORES LAVALLE DE LAVALLE 
+          ESCUELA TÉCNICA DOLORES LAVALLE DE LAVALLE
         </p>
       </Link>
-       
-        {isLoggedIn ? (
-          <div className="container-button-login">
-           
-            <button className="btn btn-primary" onClick={handleLogout}>
-              Cerrar sesión
-            </button>
-          </div>
-        ) : (
-          <div className="container-button-login">
+
+      {isLoggedIn ? (
+        <div className="container-button-login">
+          <button className="btn btn-primary" onClick={handleLogout}>
+            Cerrar sesión
+          </button>
+        </div>
+      ) : (
+        <div className="container-button-login">
           <Link to="login" className="btn btn-primary">
             Iniciar sesión
           </Link>
-          </div>
-        )}
-      
+        </div>
+      )}
+
       <div
         className="offcanvas offcanvas-start"
         data-bs-scroll="true"
@@ -161,7 +160,7 @@ function SidebarResponsive({isLoggedIn,handleLogout }) {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default SidebarResponsive;
+export default SidebarResponsive
