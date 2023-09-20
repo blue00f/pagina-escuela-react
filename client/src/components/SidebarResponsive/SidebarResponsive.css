@@ -8,7 +8,7 @@
   }
 
   .header {
-    display: flex;
+    display: flex ;
     align-items: center;
     box-sizing: initial;
     padding: 10px 12px;
@@ -155,5 +155,40 @@
 @media (max-height: 845px) {
   .sidebar {
     overflow-y: scroll;
+  }
+}
+
+@media (max-width: 480px){
+  
+  
+  .container-item-individual {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para los enlaces en el menú del off-canvas */
+  .off-canvas-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Estilo para el menú de subitems */
+  .container-subitems {
+    list-style: none;
+    padding: 0;
+    margin-left: 20px; /* Espacio para submenú */
+  }
+  
+  /* Estilo para los subitems */
+  .subitem {
+    padding: 5px 0;
+  }
+  
+  /* Estilo para mostrar los subitems cuando su elemento principal está abierto */
+  .container-item-individual.open .container-subitems {
+    display: block;
   }
 }

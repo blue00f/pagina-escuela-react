@@ -258,6 +258,8 @@ input:checked + .slider-darkmode:before {
   padding: 20px;
 }
 
+@media (min-width: 1471){
 .header {
   display: none;
+}
 }

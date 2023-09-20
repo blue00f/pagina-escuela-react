@@ -148,3 +148,53 @@ td {
   grid-column-end: 5;
   margin-bottom: 20px;
 }
+
+@media (max-width: 480px) {
+  .grid-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .description-1 h3 {
+    font-size: 1.3rem;
+  }
+
+  .lista_e_info {
+    padding: 0;
+    order: 1;
+    
+  }
+  .list-group {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  .list-group a{
+    width: 6rem;
+  }
+
+  .mas-info {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .tab-pane table {
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .tab-pane {
+    padding: 0;
+    margin: 0 auto;
+  }
+   
+
+  th,
+  td {
+    padding: 5px;
+    text-align: center;
+    background-color: #fff;
+    border: 9px solid #b2d8fa;
+    font-size: 3vw;
+  }
+}

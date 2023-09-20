@@ -18,7 +18,7 @@ function Computacion() {
               href="#tabla1"
               role="tab"
             >
-              3er año
+              <p>3°</p>
             </a>
 
             <a
@@ -27,7 +27,7 @@ function Computacion() {
               href="#tabla2"
               role="tab"
             >
-              4to año
+             <p>4°</p>
             </a>
 
             <a
@@ -36,7 +36,7 @@ function Computacion() {
               href="#tabla3"
               role="tab"
             >
-              5to año
+              <p>5°</p>
             </a>
 
             <a
@@ -45,7 +45,7 @@ function Computacion() {
               href="#tabla4"
               role="tab"
             >
-              6to año
+              <p>6°</p>
             </a>
           </div>
 

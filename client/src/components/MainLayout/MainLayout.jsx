@@ -1,6 +1,7 @@
 import { Route, Routes, useNavigate} from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
+import BottomNavbar from '../BottomNavbar/BottomNavbar'
 import Sidebar from '../Sidebar/Sidebar';
 import SidebarResponsive from '../SidebarResponsive/SidebarResponsive';
 import Footer from '../Footer/Footer';
@@ -28,6 +29,13 @@ function MainLayout() {
   const [isLaptopResolution, setIsLaptopResolution] = useState(
     window.innerWidth <= 1470
   );
+
+  const [isCellResolution, setIsCellResolution] = useState(
+    window.innerWidth <= 480
+  );
+
+
+
   function RenderRedirectToPublicacionesCL({ isLoggedIn }) {
     const navigate = useNavigate();
     useEffect(() => {
@@ -45,21 +53,41 @@ function MainLayout() {
     setHasRedirected(false);
     navigate('/'); 
   }
+  
   const handleResize = () => {
-    setIsLaptopResolution(window.innerWidth <= 1470);
+    const currentWindowWidth = window.innerWidth;
+    
+    if (currentWindowWidth <= 480) {
+      setIsLaptopResolution(false);
+      setIsCellResolution(true);
+    } else if (currentWindowWidth <= 1470) {
+      setIsLaptopResolution(true);
+      setIsCellResolution(false);
+    } else {
+      setIsLaptopResolution(false);
+      setIsCellResolution(false);
+    }
   };
 
+
+
   useEffect(() => {
+    window.addEventListener('resize', handleResize);
     window.addEventListener('resize', handleResize);
 
     return () => {
       window.removeEventListener('resize', handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
+
   return (
     <div className="grid-container">
-      {isLaptopResolution ? <SidebarResponsive /> : <Sidebar />}
+      {isLaptopResolution ? <SidebarResponsive/> : null}
+
       <RenderRedirectToPublicacionesCL isLoggedIn={isLoggedIn} />
+
+      {isCellResolution ?  <BottomNavbar/> : null }
 
       <Routes>
     
@@ -78,7 +106,7 @@ function MainLayout() {
         
         <Route exact path="*" element={<NotFound />} />
       </Routes>
-
+       
       <Sidebar isLoggedIn={isLoggedIn} handleLogout={handleLogout}  />
       <SidebarResponsive isLoggedIn={isLoggedIn} handleLogout={handleLogout}  />
 

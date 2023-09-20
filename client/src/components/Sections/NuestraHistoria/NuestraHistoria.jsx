@@ -6,8 +6,13 @@ function NuestraHistoria() {
       <div className="contenedor-titulo">
         <h2 className="titulo-seccion">Nuestra historia</h2>
       </div>
-      <div className="contenedor-inscripcion">
+      
+      <div className="contenedor-historia">
+        <div className="contenedor-img-nuestra-historia">
+          <img src="./fotoRetrato.jpg " alt="" />
+        </div>
         <div className="contenedor-texto">
+          
           <h3 className="texto-violeta">Origen</h3>
           <p className="texto-violeta">
             La escuela se creó en 1894 como "Fundación Santa Marta". El 18 de
@@ -32,9 +37,7 @@ function NuestraHistoria() {
             confección.
           </p>
         </div>
-        <div className="contenedor-img-nuestra-historia">
-          <img src="./fotoRetrato.jpg " alt="" />
-        </div>
+         
       </div>
     </section>
   );

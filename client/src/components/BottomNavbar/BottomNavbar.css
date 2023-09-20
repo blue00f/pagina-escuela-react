@@ -1,0 +1,105 @@
+@media (max-width: 480px) {
+  .footer-container {
+    display: none;
+  }
+
+  .bottom-navbar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 6%;
+    align-items: center;
+    background-color: #ffffff;
+    overflow-x: auto;
+    z-index: 999999999;
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    overflow: visible;
+  }
+
+  .icon-navbar {
+    align-self: center;
+    padding-bottom: 0;
+
+    width: 24%;
+    box-sizing: content-box;
+    fill: var(--blanco);
+  }
+
+  .container-items-navbar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .icon-button {
+    width: 2.5rem;
+    background: transparent;
+    fill: #2b0c5a;
+    border: none;
+    padding: 0;
+    margin-right: 4rem;
+    margin-left:3rem;
+  }
+
+  .container-items-navbar {
+    box-sizing: content-box;
+  }
+
+  .items {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .icon-navbar {
+    fill: #2b0c5a;
+  }
+
+  .off-canvas-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 94%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    z-index: -9999;
+
+    transition: right 0.3s ease; /* Animación de deslizamiento */
+  }
+  .off-canvas.open {
+  right: 0; /* Muestra el off-canvas desplazándolo hacia la izquierda */
+  transform: translateX(0); /* Asegura que el off-canvas esté en la posición correcta */
+}
+
+  .off-canvas {
+    top:0;
+    padding-top: 3rem;
+    width: 95%; 
+    height: 85%;
+    margin-right: 0.75rem;
+     
+    border-radius: 1.75rem;
+    background-color: #fff;
+    
+    
+    transition: right 1s ease-in-out; /* Animación de desplazamiento */
+    transform: translateX(0); /* Inicialmente, el off-canvas está fuera de la vista */
+    
+  }
+
+  .off-canvas ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .off-canvas ul li {
+    padding: 10px;
+  }
+}

@@ -185,3 +185,64 @@
         height: 45px;
     }
 }
+
+@media (max-width: 480px){
+
+    .carousel-inner {
+        width: 100vw;
+        border-radius: 0;
+        box-shadow: 0;
+    }
+
+    .content {
+        margin-top: 0;
+        margin-bottom: 15vh;
+        height: 450px;
+    }
+
+    .carousel-control-prev,.carousel-control-next{
+        display: none;
+    }
+
+    .carousel-item > img {
+        width: 100%;
+        
+    }
+
+    .alineamiento{
+        top:30%;
+    }
+
+    .carousel-caption{
+        display: block !important;
+    }
+    .carousel-caption h5 {
+         
+        font-size: 1.6rem;
+        margin: auto auto;
+        
+    }
+    
+    .carousel-caption p {
+        display: none;
+    }
+
+    .boton-inicio {
+        font-size: 16px;
+    }
+
+    .boton1{
+        height: 10vw;
+        width: 25vw;
+    }
+
+    .boton2 {
+        display: none;
+    }
+
+    .boton-inicio > a > svg {
+        width: 45px;
+        height: 45px;
+    }
+
+}

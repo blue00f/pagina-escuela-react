@@ -1,5 +1,6 @@
 import { InstagramIcon, FacebookIcon } from '../Icons/Icons';
 import { Link } from 'react-router-dom';
+import './FooterResponsive.css';
 
 function Footer() {
   return (

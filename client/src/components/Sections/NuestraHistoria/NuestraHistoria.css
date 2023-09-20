@@ -1,8 +1,6 @@
-.contenedor-inscripcion {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  grid-column-gap: 50px;
-  grid-row-gap: 10px;
+.contenedor-historia {
+  display: flex;
+  flex-direction: row;
   width: 90%;
   margin: 50px auto;
 }
@@ -10,12 +8,16 @@
 .contenedor-texto {
   background-color: #fff;
   padding: 35px;
+  margin-right: 5rem;
 }
 
 .contenedor-img-nuestra-historia {
   background-color: #fff;
   padding: 10px;
-  margin: auto;
+  margin-right: 5rem;
+  margin-left: 5rem;
+  box-sizing: content-box;
+  width: 360px;
 }
 
 .contenedor-img-nuestra-historia img {
@@ -23,11 +25,32 @@
 }
 
 @media (max-width: 1280px) {
-  .contenedor-inscripcion {
+  .contenedor-historia {
     display: block;
+  }
+  .contenedor-img-nuestra-historia img {
+    border-radius: 10rem;
+    width: 10rem;
+  }
+  .contenedor-img-nuestra-historia {
+    background-color: #fff;
+    padding: 10px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    width: 10rem;
+    margin-bottom: 2rem;
+    border-radius: 10rem;
   }
 
   .contenedor-texto {
     margin-bottom: 20px;
+    margin: 0;
+    border-radius: 2rem;
+  }
+
+  .contenedor-titulo h2 {
+    font-size: 2rem;
+    margin: 0 auto;
+    text-align: center;
   }
 }
