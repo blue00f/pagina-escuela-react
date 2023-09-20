@@ -1,6 +1,6 @@
 import "./BottomNavbar.css";
 import { Link } from "react-router-dom";
- 
+
 import React, { useState, useEffect } from "react";
 import {
   CloseIcon,
@@ -10,29 +10,26 @@ import {
   BookIcon,
   QuestionIcon,
   HamburguerIcon,
-} from '../Icons/Icons.jsx';
+} from "../Icons/Icons.jsx";
 
-import '../SidebarResponsive/SidebarResponsive.css';
+import "../SidebarResponsive/SidebarResponsive.css";
 function BottomNavbar() {
   const [isOffCanvasOpen, setIsOffCanvasOpen] = useState(false);
- 
+
   const toggleOffCanvas = () => {
     setIsOffCanvasOpen(!isOffCanvasOpen);
   };
   useEffect(() => {
     const handleRouteChange = () => {
-      window.scrollTo(0, 0); // Hace scroll al principio de la página al cambiar de ruta
+      window.scrollTo(0, 0); //
     };
 
-    // Agrega un escuchador de eventos para el cambio de ruta
-    window.addEventListener('hashchange', handleRouteChange);
+    window.addEventListener("hashchange", handleRouteChange);
 
-    // Limpia el escuchador cuando el componente se desmonta
     return () => {
-      window.removeEventListener('hashchange', handleRouteChange);
+      window.removeEventListener("hashchange", handleRouteChange);
     };
   }, []);
-   
 
   return (
     <nav class="bottom-navbar">
@@ -64,13 +61,14 @@ function BottomNavbar() {
         </li>
 
         <li className="container-items-navbar">
-            
-          <button onClick={toggleOffCanvas}   className="icon-button">
-
-            <svg xmlns="http://www.w3.org/2000/svg" className="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">
+          <button onClick={toggleOffCanvas} className="icon-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="bi bi-grid-3x3-gap-fill"
+              viewBox="0 0 16 16"
+            >
               <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z" />
             </svg>
-
           </button>
         </li>
       </ul>
@@ -78,16 +76,17 @@ function BottomNavbar() {
       {isOffCanvasOpen && (
         <div className="off-canvas-overlay">
           <div className="off-canvas open">
-            
             <ul>
-               
-              <Link to="publicacionesSL " onClick={() => setIsOffCanvasOpen(false)}>
+              <Link
+                to="publicacionesSL"
+                onClick={() => setIsOffCanvasOpen(false)}
+              >
                 <li className="container-item-individual texto-semibold">
                   <PublicationIcon />
                   <p className="texto-violeta">Publicaciones</p>
-                </li> 
+                </li>
               </Link>
-              <Link  >
+              <Link>
                 <li className="container-item-individual texto-semibold">
                   <InstitutionIcon />
                   <p className="texto-violeta">Institución</p>
@@ -132,7 +131,7 @@ function BottomNavbar() {
                 </ul>
               </Link>
 
-              <a  >
+              <a>
                 <li className="container-item-individual texto-semibold">
                   <BookIcon />
                   <p className="texto-violeta">Plan de estudio</p>
@@ -167,10 +166,7 @@ function BottomNavbar() {
                   </li>
                 </ul>
               </a>
-
-               
             </ul>
-            
           </div>
         </div>
       )}

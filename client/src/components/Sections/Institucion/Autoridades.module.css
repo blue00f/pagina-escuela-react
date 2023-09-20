@@ -7,6 +7,10 @@
 
 @media (max-width: 768px){
   .contenedorImagenes {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0;
+    
   }
+   
 }

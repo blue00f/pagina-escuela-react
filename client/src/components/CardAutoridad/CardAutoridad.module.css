@@ -16,3 +16,26 @@
     line-height: 25px;
     color: #2B0C5A;
 }
+
+@media (max-width: 480px) {
+    
+  
+    .imagenAutoridad {
+      width: 15rem;
+      height: 15rem;
+      border-radius: 20px;
+      box-shadow: 0 0 20px 3px rgba(0, 0, 0, 25%);
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+    .contenedorImgAutoridad {
+      margin-bottom: 2.5rem;
+      
+    }
+    .contenedorImgAutoridad > p {
+        font-size: 1rem;
+        line-height: 25px;
+        color: #2B0C5A;
+    }
+    
+  }

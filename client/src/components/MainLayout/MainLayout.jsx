@@ -6,17 +6,17 @@ import Sidebar from '../Sidebar/Sidebar';
 import SidebarResponsive from '../SidebarResponsive/SidebarResponsive';
 import Footer from '../Footer/Footer';
 
+import Inscripciones from '../Sections/Institucion/Inscripciones.jsx'
 import LoginLayout from '../LoginLayout/LoginLayout';
 import Inicio from '../Sections/Inicio/Inicio.jsx';
-import PublicacionesSL from '../Sections/PublicacionesSinLogin/PublicacionesSL.jsx';
-import PublicacionesCL from '../Sections/PublicacionesConLogin/PublicacionesCL.jsx';
-import NuestraHistoria from '../Sections/NuestraHistoria/NuestraHistoria.jsx';
-import Autoridades from '../Sections/Autoridades/Autoridades.jsx';
-import Inscripciones from '../Sections/Inscripciones/Inscripciones.jsx';
-import Gao from '../Sections/Gao/Gao.jsx';
+import Gao from '../Sections/PlanDeEstudio/Gao.jsx'
+import Computacion from '../Sections/PlanDeEstudio/Computacion.jsx'
+import CicloBasico from '../Sections/PlanDeEstudio/CicloBasico.jsx'
+import PublicacionesSL from '../Sections/Publicaciones/PublicacionesSL.jsx';
+import PublicacionesCL from '../Sections/Publicaciones/PublicacionesCL.jsx';
+import NuestraHistoria from '../Sections/Institucion/NuestraHistoria.jsx';
+import Autoridades from '../Sections/Institucion/Autoridades.jsx';
 import PreguntasFrecuentes from '../Sections/PreguntasFrecuentes/PreguntasFrecuentes.jsx';
-import Computacion from '../Sections/Computacion/Computacion.jsx';
-import CicloBasico from '../Sections/CicloBasico/CicloBasico.jsx';
 import NotFound from '../Sections/NotFound/NotFound.jsx';
 import './LoginButton.css';
  
