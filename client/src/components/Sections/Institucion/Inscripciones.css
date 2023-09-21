@@ -1,51 +1,51 @@
 .contenedor-inscripcion {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  grid-column-gap: 50px;
-  grid-row-gap: 10px;
-  width: 90%;
-  margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 10px;
+    width: 90%;
+    margin: 50px auto;
 }
 
 .contenedor-texto {
-  background-color: #fff;
-  padding: 35px;
+    background-color: #fff;
+    padding: 35px;
 }
 
 .texto-violeta {
-  color: #2b0c5a;
+    color: #2B0C5A;
 }
 
 .contenedor-fechas {
-  background-color: #fff;
-  padding: 35px;
+    background-color: #fff;
+    padding: 35px;
 }
 
 .contenedor-fechas ul {
-  padding: 0;
-  list-style: none;
+    padding: 0;
+    list-style: none;
 }
 
 .contenedor-fechas ul li {
-  background-color: #e7f1fa;
-  border-radius: 5px;
-  margin: 20px 0;
-  padding: 10px;
+    background-color: #E7F1FA;
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 10px;
 }
 
-@media (max-width: 1280px) {
-  .contenedor-inscripcion {
-    display: block;
-  }
+@media (max-width: 1280px){
+    .contenedor-inscripcion {
+        display: block;
+    }
 
-  .contenedor-texto {
-    margin-bottom: 20px;
-  }
+    .contenedor-texto {
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 480px) {
-  .contenedor-texto p,
-  h3 {
-    text-align: center;
+    .contenedor-texto p,
+    h3 {
+      text-align: center;
+    }
   }
-}

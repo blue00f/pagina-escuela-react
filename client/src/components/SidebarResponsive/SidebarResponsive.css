@@ -109,41 +109,86 @@
 /* RESPONSIVE DESIGN ADAPTABLE PARA TELEFONOS */
 /* -------------------------------------------*/
 
- 
+/* Cuando haces zoom, el sidebar coloca un scroll para ver todas las secciones */
+@media (max-height: 845px) {
+  .sidebar {
+    overflow-y: scroll;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 3rem;
+    flex-direction: column;
+  }
+
+  .footer-content-container {
+    width: 100%;
+    padding: 3rem 0;
+    border-bottom: 1px solid #2a2a2a;
+    align-items: center;
+  }
+
+  .footer-content-container:nth-of-type(1) {
+    align-items: flex-start;
+  }
+  .footer-content-container:nth-of-type(3) {
+    border-bottom: none;
+    padding-left: 20px;
+    padding-bottom: 0;
+  }
+
+  .footer-menus {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #2a2a2a;
+  }
+
+  .footer-menus .footer-content-container:nth-of-type(1) {
+    width: 100%;
+    align-items: flex-start;
+    border-bottom: none;
+  }
+  .footer-menus .footer-content-container:nth-of-type(2) {
+    width: 45%;
+    align-items: flex-start;
+    border-bottom: none;
+  }
+}
 
 @media (max-width: 480px){
-  
-  
+
+
   .container-item-individual {
     display: flex;
     align-items: center;
     padding: 10px;
     cursor: pointer;
   }
-  
+
   /* Estilo para los enlaces en el menú del off-canvas */
   .off-canvas-item a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
   }
-  
+
   /* Estilo para el menú de subitems */
   .container-subitems {
     list-style: none;
     padding: 0;
     margin-left: 20px; /* Espacio para submenú */
   }
-  
+
   /* Estilo para los subitems */
   .subitem {
     padding: 5px 0;
   }
-  
+
   /* Estilo para mostrar los subitems cuando su elemento principal está abierto */
   .container-item-individual.open .container-subitems {
     display: block;
   }
 }
-
- 

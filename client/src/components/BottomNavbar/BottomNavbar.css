@@ -13,7 +13,7 @@
     background-color: #ffffff;
     overflow-x: auto;
     z-index: 999999999;
-    
+
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif;
@@ -29,13 +29,11 @@
     fill: var(--blanco);
   }
 
-  .container-items-navbar  {
-     
+  .container-items-navbar {
     text-align: center;
     padding:3rem;
   }
-   
-   
+
   .icon-button {
     width: 2.5rem;
     background: transparent;
@@ -43,27 +41,22 @@
     border: none;
     padding: 0;
     margin-right: 0 1rem;
-   
   }
 
   .container-items-navbar a{
-   
     width: 2.5rem;
     background: transparent;
     fill: #2b0c5a;
     border: none;
     padding: 0;
     margin-right: 0 1rem;
-     
-     
   }
-
+  
   .items {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 0 1rem;
-    
   }
 
   .icon-navbar {
@@ -96,14 +89,14 @@
     width: 95%; 
     height: 85%;
     margin-right: 0.75rem;
-     
+
     border-radius: 1.75rem;
     background-color: #fff;
-    
-    
+
+
     transition: right 1s ease-in-out; /* Animación de desplazamiento */
     transform: translateX(0); /* Inicialmente, el off-canvas está fuera de la vista */
-    
+
   }
 
   .off-canvas ul {

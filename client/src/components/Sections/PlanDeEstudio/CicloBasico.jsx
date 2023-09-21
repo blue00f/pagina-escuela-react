@@ -19,7 +19,7 @@ function CicloBasico() {
               href="#tabla1"
               role="tab"
             >
-              <p>1°</p>
+              1er año
             </a>
 
             <a
@@ -28,7 +28,7 @@ function CicloBasico() {
               href="#tabla2"
               role="tab"
             >
-              <p>2°</p>
+              2do año
             </a>
           </div>
 

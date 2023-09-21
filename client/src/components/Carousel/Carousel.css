@@ -187,7 +187,6 @@
 }
 
 @media (max-width: 480px){
-
     .carousel-inner {
         width: 100vw;
         border-radius: 0;
@@ -206,7 +205,7 @@
 
     .carousel-item > img {
         width: 100%;
-        
+
     }
 
     .alineamiento{
@@ -217,12 +216,12 @@
         display: block !important;
     }
     .carousel-caption h5 {
-         
+
         font-size: 1.6rem;
         margin: auto auto;
-        
+
     }
-    
+
     .carousel-caption p {
         display: none;
     }
@@ -244,5 +243,4 @@
         width: 45px;
         height: 45px;
     }
-
 }

@@ -19,7 +19,7 @@ function Computacion() {
               href="#tabla1"
               role="tab"
             >
-               <p>3°</p>
+              3er año
             </a>
 
             <a
@@ -28,7 +28,7 @@ function Computacion() {
               href="#tabla2"
               role="tab"
             >
-              <p>4°</p>
+              4to año
             </a>
 
             <a
@@ -37,7 +37,7 @@ function Computacion() {
               href="#tabla3"
               role="tab"
             >
-               <p>5°</p>
+              5to año
             </a>
 
             <a
@@ -46,7 +46,7 @@ function Computacion() {
               href="#tabla4"
               role="tab"
             >
-               <p>6°</p>
+              6to año
             </a>
           </div>
 
