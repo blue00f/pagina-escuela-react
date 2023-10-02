@@ -108,22 +108,22 @@ function PracticasProfesionalizantes() {
             nuestro interés en brindar oportunidades de crecimiento a la
             comunidad que servimos.
           </p>
-          <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
-            <div className="m-1 flex flex-wrap flex-col md:flex-row content-center md:-m-2">
+          <div className="mx-auto lg:px-32 lg:pt-12">
+            <div className="flex flex-wrap flex-col md:flex-row content-center md:-m-2">
               <div className="flex md:w-1/2 flex-wrap content-center justify-center items-center">
-                <div className="p-1 md:p-2 my-4 md:my-0">
+                <div className="md:p-2 my-4 md:my-0">
                   <img
                     alt="gallery"
-                    className="block h-fit w-fit rounded-lg object-cover object-center"
+                    className="block h-fit w-fit object-contain object-center"
                     src="./ccd-foto-1.jpg"
                   />
                 </div>
               </div>
               <div className="flex md:w-1/2 flex-wrap content-center justify-center items-center">
-                <div className="p-1 md:p-2 my-4 md:my-0">
+                <div className="md:p-2 md:my-0">
                   <img
                     alt="gallery"
-                    className="block h-fit w-fit rounded-lg object-cover object-center"
+                    className="block h-fit w-fit object-contain object-center"
                     src="./ccd-foto-2.jpg"
                   />
                 </div>
