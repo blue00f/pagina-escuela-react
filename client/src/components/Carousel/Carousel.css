@@ -1,8 +1,15 @@
 .carousel-item > img {
   object-fit: cover;
   filter: brightness(70%);
+  height: 50rem;
 }
 
 .carousel-item > img {
   max-height: 40rem;
+}
+
+@media (max-width: 768px) {
+  .carousel-item > img {
+    height: 20rem;
+  }  
 }

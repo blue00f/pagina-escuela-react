@@ -8,3 +8,20 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 1150px) {
+  .contenedor-svg-inicio {
+    padding-top: 2rem;
+  }
+
+  .contenedor-card-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contenedor-card-inicio > p, .contenedor-card-inicio > h5 {
+    text-align: center;
+  }
+}

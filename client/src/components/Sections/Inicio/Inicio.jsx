@@ -16,8 +16,8 @@ function Inicio() {
   return (
     <section className="content-container">
       <Carousel />
-      <div className="my-8 flex flex-wrap justify-center items-center">
-        <div className="flex md:w-1/2 flex-wrap justify-center items-center my-2">
+      <div className="my-8 flex max-2xl:flex-col flex-wrap justify-center items-center">
+        <div className="flex xl:w-1/2 flex-wrap justify-center items-center my-2">
           <CardInicio
             titulo={'Publicaciones'}
             descripcion={
@@ -27,7 +27,7 @@ function Inicio() {
             url={'/publicaciones'}
           />
         </div>
-        <div className="flex md:w-1/2 flex-wrap justify-center items-center my-2">
+        <div className="flex xl:w-1/2 flex-wrap justify-center items-center my-2">
           <CardInicio
             titulo={'Prácticas Profesionalizantes'}
             descripcion={
@@ -37,7 +37,7 @@ function Inicio() {
             url={'/practicas-profesionalizantes'}
           />
         </div>
-        <div className="flex md:w-1/2 flex-wrap justify-center items-center my-2">
+        <div className="flex xl:w-1/2 flex-wrap justify-center items-center my-2">
           <CardInicio
             titulo={'Documentos'}
             descripcion={
@@ -47,7 +47,7 @@ function Inicio() {
             url={'/documentos'}
           />
         </div>
-        <div className="flex md:w-1/2 flex-wrap justify-center items-center my-2">
+        <div className="flex xl:w-1/2 flex-wrap justify-center items-center my-2">
           <CardInicio
             titulo={'Autoridades'}
             descripcion={
@@ -57,7 +57,7 @@ function Inicio() {
             url={'/autoridades'}
           />
         </div>
-        <div className="flex md:w-1/2 flex-wrap justify-center items-center my-2">
+        <div className="flex xl:w-1/2 flex-wrap justify-center items-center my-2">
           <CardInicio
             titulo={'Computación'}
             descripcion={
@@ -67,7 +67,7 @@ function Inicio() {
             url={'/computacion'}
           />
         </div>
-        <div className="flex md:w-1/2 flex-wrap justify-center items-center my-2">
+        <div className="flex xl:w-1/2 flex-wrap justify-center items-center my-2">
           <CardInicio
             titulo={'Gestión y Administración de las Organizaciones'}
             descripcion={
@@ -77,7 +77,7 @@ function Inicio() {
             url={'/gao'}
           />
         </div>
-        <div className="flex md:w-1/2 flex-wrap justify-center items-center my-2">
+        <div className="flex xl:w-1/2 flex-wrap justify-center items-center my-2">
           <CardInicio
             titulo={'Nuestra historia'}
             descripcion={
@@ -87,7 +87,7 @@ function Inicio() {
             url={'/nuestra-historia'}
           />
         </div>
-        <div className="flex md:w-1/2 flex-wrap justify-center items-center my-2">
+        <div className="flex xl:w-1/2 flex-wrap justify-center items-center my-2">
           <CardInicio
             titulo={'Preguntas frecuentes'}
             descripcion={

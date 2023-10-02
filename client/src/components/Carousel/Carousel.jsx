@@ -6,10 +6,10 @@ function Carousel() {
   return (
     <div
       id="carouselExampleAutoplaying"
-      className="carousel slide m-4"
+      className="carousel slide"
       data-bs-ride="carousel"
     >
-      <div className="carousel-inner">
+      <div className="carousel-inner md:w-full md:h-full">
         <div className="carousel-item active">
           <img
             src="./foto-escuela-1.jpg"
