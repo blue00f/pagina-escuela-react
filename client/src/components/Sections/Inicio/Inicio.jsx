@@ -1,54 +1,100 @@
-import Carousel from '../../Carousel/Carousel'
+import Carousel from '../../Carousel/Carousel.jsx'
 import CardInicio from '../../CardInicio/CardInicio'
+import {
+  PublicationIcon,
+  QuestionIcon,
+  BriefcaseIcon,
+  PdfIcon,
+  AuthorityIcon,
+  ComputingIcon,
+  GaoIcon,
+  HistoryIcon,
+} from '../../Icons/Icons.jsx'
 import './inicio.css'
 
 function Inicio() {
   return (
     <section className="content-container">
       <Carousel />
-      <div className="grid grid-cols-2 gap-6">
-        <div className="mx-auto m-2">
+      <div className="my-8 flex flex-wrap justify-center items-center">
+        <div className="flex md:w-1/2 flex-wrap justify-center items-center my-2">
           <CardInicio
             titulo={'Publicaciones'}
-            descripcion={'LasdadaadadadLasdadaadadadLasdadaadadad'}
-            imagen={'fotoSecretaria.jpg'}
+            descripcion={
+              'Accede a las publicaciones de la escuela para conocer las noticias más recientes.'
+            }
+            imagen={<PublicationIcon />}
+            url={'/publicaciones'}
           />
         </div>
-        <div className="mx-auto m-2">
+        <div className="flex md:w-1/2 flex-wrap justify-center items-center my-2">
+          <CardInicio
+            titulo={'Prácticas Profesionalizantes'}
+            descripcion={
+              'Conocé los proyectos que realizaron los estudiantes de último año en Computación o Gestión y Administración de las Organizaciones.'
+            }
+            imagen={<BriefcaseIcon />}
+            url={'/practicas-profesionalizantes'}
+          />
+        </div>
+        <div className="flex md:w-1/2 flex-wrap justify-center items-center my-2">
+          <CardInicio
+            titulo={'Documentos'}
+            descripcion={
+              'Si sos un docente o alguien de la comunidad educativa, entrá acá para descargar los PDF.'
+            }
+            imagen={<PdfIcon />}
+            url={'/documentos'}
+          />
+        </div>
+        <div className="flex md:w-1/2 flex-wrap justify-center items-center my-2">
           <CardInicio
             titulo={'Autoridades'}
-            descripcion={'LasdadaadadadLasdadaadadadLasdadaadadad'}
-            imagen={'fotoSecretaria.jpg'}
+            descripcion={
+              'Conocé a los rectores, vicerector y secretarias que se encargan de manejar la escuela técnica.'
+            }
+            imagen={<AuthorityIcon />}
+            url={'/autoridades'}
           />
         </div>
-        <div className="mx-auto m-2">
-          <CardInicio
-            titulo={'Galería'}
-            descripcion={'LasdadaadadadLasdadaadadadLasdadaadadad'}
-            imagen={'fotoSecretaria.jpg'}
-          />
-        </div>
-        <div className="mx-auto m-2">
+        <div className="flex md:w-1/2 flex-wrap justify-center items-center my-2">
           <CardInicio
             titulo={'Computación'}
-            descripcion={'LasdadaadadadLasdadaadadadLasdadaadadad'}
-            imagen={'fotoSecretaria.jpg'}
+            descripcion={
+              'Entrá acá para conocer las materias de la especialidad computación.'
+            }
+            imagen={<ComputingIcon />}
+            url={'/computacion'}
           />
         </div>
-        <div className="mx-auto m-2">
+        <div className="flex md:w-1/2 flex-wrap justify-center items-center my-2">
           <CardInicio
             titulo={'Gestión y Administración de las Organizaciones'}
-            descripcion={'LasdadaadadadLasdadaadadadLasdadaadadad'}
-            imagen={'fotoSecretaria.jpg'}
+            descripcion={
+              'Entrá acá para conocer las materias de la especialidad GAO.'
+            }
+            imagen={<GaoIcon />}
+            url={'/gao'}
           />
         </div>
-        <div className="mx-auto m-2">
+        <div className="flex md:w-1/2 flex-wrap justify-center items-center my-2">
           <CardInicio
-            titulo={'Creadores de la página'}
+            titulo={'Nuestra historia'}
             descripcion={
-              'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta).'
+              'Conocé la historia del colegio y a la fundadora Dolores Lavalle.'
             }
-            imagen={'fotoSecretaria.jpg'}
+            imagen={<HistoryIcon />}
+            url={'/nuestra-historia'}
+          />
+        </div>
+        <div className="flex md:w-1/2 flex-wrap justify-center items-center my-2">
+          <CardInicio
+            titulo={'Preguntas frecuentes'}
+            descripcion={
+              'Accedé acá por si tenés alguna duda acerca de la inscripción de 1er año.'
+            }
+            imagen={<QuestionIcon />}
+            url={'/preguntas-frecuentes'}
           />
         </div>
       </div>

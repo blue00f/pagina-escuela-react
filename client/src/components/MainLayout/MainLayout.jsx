@@ -13,8 +13,9 @@ import PublicacionesCL from '../Sections/Publicaciones/PublicacionesCL.jsx'
 
 import NuestraHistoria from '../Sections/Institucion/NuestraHistoria.jsx'
 import Autoridades from '../Sections/Institucion/Autoridades.jsx'
-import Galeria from '../Sections/Institucion/Galeria.jsx'
-import Inscripciones from '../Sections/Institucion/Inscripciones.jsx'
+import Documentos from '../Sections/Institucion/Documentos.jsx'
+
+import PracticasProfesionalizantes from '../Sections/PractIcasProfesionalizantes/PracticasProfesionalizantes.jsx'
 
 import CicloBasico from '../Sections/PlanDeEstudio/CicloBasico.jsx'
 import Gao from '../Sections/PlanDeEstudio/Gao.jsx'
@@ -116,17 +117,22 @@ function MainLayout() {
         />
         <Route exact path="/nuestra-historia" element={<NuestraHistoria />} />
         <Route exact path="/autoridades" element={<Autoridades />} />
-        <Route exact path="/galeria" element={<Galeria />} />
-        <Route exact path="/inscripciones" element={<Inscripciones />} />
+        <Route exact path="/documentos" element={<Documentos />} />
+
+        <Route
+          exact
+          path="/practicas-profesionalizantes"
+          element={<PracticasProfesionalizantes />}
+        />
+
+        <Route exact path="/computacion" element={<Computacion />} />
         <Route exact path="/gao" element={<Gao />} />
+        <Route exact path="/ciclo-basico" element={<CicloBasico />} />
         <Route
           exact
           path="/preguntas-frecuentes"
           element={<PreguntasFrecuentes />}
         />
-        <Route exact path="/computacion" element={<Computacion />} />
-        <Route exact path="/ciclo-basico" element={<CicloBasico />} />
-
         <Route exact path="*" element={<NotFound />} />
       </Routes>
 

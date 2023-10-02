@@ -1,7 +1,7 @@
 import CardDocumento from '../../CardDocumento/CardDocumento'
-import styles from './Galeria.module.css'
+import styles from './Documentos.module.css'
 
-function Galeria() {
+function Documentos() {
   return (
     <div className="content-container">
       <div className="contenedor-titulo">
@@ -28,4 +28,4 @@ function Galeria() {
   )
 }
 
-export default Galeria
+export default Documentos

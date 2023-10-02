@@ -10,30 +10,30 @@ function Autoridades() {
       <div className={styles.contenedorImagenes}>
         <CardAutoridad
           foto={'./fotoUser.webp'}
-          cargo={'Regente'}
-          nombre={'Cosme Fulanito'}
+          cargo={'Rectora'}
+          nombre={'María Laura Torres'}
         />
         <CardAutoridad
           foto={'./fotoUser.webp'}
           cargo={'Vicerrectora'}
-          nombre={'Cosme Fulanito'}
+          nombre={'Patricia Capello'}
         />
         <CardAutoridad
           foto={'./fotoUser.webp'}
           cargo={'Rector TM'}
-          nombre={'Cosme Fulanito'}
+          nombre={'Juan de Abreu'}
         />
       </div>
       <div className={styles.contenedorImagenes}>
         <CardAutoridad
           foto={'./fotoUser.webp'}
           cargo={'Rector TT'}
-          nombre={'Cosme Fulanito'}
+          nombre={"Silvina De'Aquino"}
         />
         <CardAutoridad
           foto={'./fotoUser.webp'}
-          cargo={'Jefe General de Enseñanza Práctica'}
-          nombre={'Cosme Fulanito'}
+          cargo={'Secretaria'}
+          nombre={'Andrea Torres'}
         />
       </div>
     </section>

@@ -137,6 +137,13 @@ td > a:hover {
   font-weight: 700;
 }
 
+.accordion-button:focus {
+  z-index: 3;
+  border-color: #2b0c5a;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(43, 12, 90, 0.25);;
+}
+
 .collapse{
   visibility: visible !important;
 }

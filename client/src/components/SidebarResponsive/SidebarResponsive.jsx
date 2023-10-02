@@ -7,6 +7,7 @@ import {
   BookIcon,
   QuestionIcon,
   HamburguerIcon,
+  BriefcaseIcon,
 } from '../Icons/Icons.jsx'
 import './SidebarResponsive.css'
 
@@ -105,15 +106,14 @@ function SidebarResponsive({ isLoggedIn, handleLogout }) {
                       Galería
                     </Link>
                   </li>
-                  <li className="fondo">
-                    <Link
-                      className="subitem texto-semibold texto-violeta"
-                      to="inscripciones"
-                    >
-                      Inscripciones
-                    </Link>
-                  </li>
                 </ul>
+              </Link>
+
+              <Link to="/practicas-profesionalizantes">
+                <li className="container-item-individual texto-semibold">
+                  <BriefcaseIcon />
+                  <p className="texto-violeta">Prácticas Profesionalizantes</p>
+                </li>
               </Link>
 
               <a href="#">
