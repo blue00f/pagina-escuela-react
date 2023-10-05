@@ -90,8 +90,11 @@ function MainLayout() {
       ) : (
         <Sidebar isLoggedIn={isLoggedIn} handleLogout={handleLogout} />
       )}
+
       <RenderRedirectToPublicacionesCL isLoggedIn={isLoggedIn} />
 
+      {isCellResolution ? <BottomNavbar/> : null}
+       
       <Routes>
         <Route exact path="/" element={<Inicio />} />
         <Route

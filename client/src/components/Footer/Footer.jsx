@@ -3,9 +3,9 @@ import styles from './Footer.module.css'
 
 function Footer() {
   return (
-    <footer className={styles.footerContainer}>
-      <div className="flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
-        <div className="grid grid-cols-1 text-sm gap-x-24 gap-y-8 sm:grid-cols-3 justify-items-center">
+    <footer className= {styles.footerContainer }  >
+      <div className="flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0  ">
+        <div className="grid grid-cols-1 text-sm gap-x-24 gap-y-8 sm:grid-cols-3 justify-items-center ">
           <div className="space-y-3">
             <span className="font-semibold text-base uppercase text-gray-50">
               Principal
@@ -33,11 +33,11 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="space-y-3">
+          <div className="space-y-3 pt-3">
             <span className="font-semibold text-base uppercase text-gray-50">
               Sobre la escuela
             </span>
-            <ul className="space-y-1">
+            <ul className="space-y-1  ">
               <li>
                 <Link rel="noopener noreferrer" to="/nuestra-historia">
                   Nuestra historia
@@ -60,11 +60,11 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="space-y-3">
+          <div className="space-y-3 pt-4">
             <div className="font-semibold text-base uppercase text-gray-50">
               Redes sociales
             </div>
-            <div className="flex justify-start space-x-3">
+            <div className="flex md:justify-start sm:justify-center space-x-3">
               <a
                 rel="noopener noreferrer"
                 href="https://www.instagram.com/et7.oficial"
