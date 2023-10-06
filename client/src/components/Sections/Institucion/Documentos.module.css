@@ -1,5 +1,5 @@
 .seccionDocumentos {
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 .contenedorDocumentos {
@@ -12,6 +12,7 @@
   color: #2B0C5A;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 @media (max-width: 768px){

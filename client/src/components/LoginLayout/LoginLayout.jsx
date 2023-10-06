@@ -87,10 +87,7 @@ function LoginLayout({ isLoggedIn, setIsLoggedIn }) {
             />
             <label htmlFor="floatingPassword">Contraseña</label>
           </div>
-          <button
-            type="submit"
-            className="btn btn-primary button-form mx-auto "
-          >
+          <button type="submit" className="btn btn-primary button-form">
             Ingresar
           </button>
         </form>

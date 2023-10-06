@@ -5,7 +5,7 @@ function CardInicio({ titulo, descripcion, imagen, url }) {
   return (
     <Link
       to={url}
-      className="flex flex-col items-center bg-white rounded-lg shadow sm:flex-row sm:max-w-xl"
+      className="flex flex-col items-center bg-white hover:bg-red-300 rounded-lg shadow sm:flex-row sm:max-w-xl"
     >
       <div className="contenedor-svg-inicio px-4">{imagen}</div>
       <div className="contenedor-card-inicio py-4 px-2">

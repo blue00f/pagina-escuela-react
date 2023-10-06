@@ -159,8 +159,6 @@
 }
 
 @media (max-width: 480px){
-
-
   .container-item-individual {
     display: flex;
     align-items: center;
@@ -168,14 +166,12 @@
     cursor: pointer;
   }
 
-  /* Estilo para los enlaces en el menú del off-canvas */
   .off-canvas-item a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
   }
 
-  /* Estilo para el menú de subitems */
   .container-subitems {
     list-style: none;
     padding: 0;

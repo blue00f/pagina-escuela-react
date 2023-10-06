@@ -38,7 +38,7 @@ function SidebarResponsive({ isLoggedIn, handleLogout }) {
         </div>
       ) : (
         <div className="container-button-login">
-          <Link to="login" className="btn btn-primary">
+          <Link to="login" className="btn btn-primary login-a">
             Iniciar sesión
           </Link>
         </div>

@@ -2,7 +2,13 @@ import './BottomNavbar.css'
 import { Link } from 'react-router-dom'
 
 import { useState, useEffect } from 'react'
-import { PublicationIcon, InstitutionIcon, BookIcon } from '../Icons/Icons.jsx'
+import {
+  PublicationIcon,
+  InstitutionIcon,
+  BookIcon,
+  HomeIcon,
+  BriefcaseIcon,
+} from '../Icons/Icons.jsx'
 
 import '../SidebarResponsive/SidebarResponsive.css'
 function BottomNavbar() {
@@ -69,6 +75,12 @@ function BottomNavbar() {
         <div className="off-canvas-overlay">
           <div className="off-canvas open">
             <ul>
+              <Link to="/" onClick={() => setIsOffCanvasOpen(false)}>
+                <li className="container-item-individual texto-semibold">
+                  <HomeIcon />
+                  <p className="texto-violeta">Inicio</p>
+                </li>
+              </Link>
               <Link
                 to="publicaciones"
                 onClick={() => setIsOffCanvasOpen(false)}
@@ -86,7 +98,7 @@ function BottomNavbar() {
                 <ul className="container-subitems">
                   <li className="fondo">
                     <Link
-                      className="subitem texto-semibold texto-violeta"
+                      className="subitem texto-semibold texto-violeta py-0 pl-4"
                       to="nuestra-historia"
                       onClick={() => setIsOffCanvasOpen(false)}
                     >
@@ -95,7 +107,7 @@ function BottomNavbar() {
                   </li>
                   <li className="fondo">
                     <Link
-                      className="subitem texto-semibold texto-violeta"
+                      className="subitem texto-semibold texto-violeta py-0 pl-4"
                       to="autoridades"
                       onClick={() => setIsOffCanvasOpen(false)}
                     >
@@ -104,26 +116,27 @@ function BottomNavbar() {
                   </li>
                   <li className="fondo">
                     <Link
-                      className="subitem texto-semibold texto-violeta"
-                      to="galeria"
+                      className="subitem texto-semibold texto-violeta py-0 pl-4"
+                      to="documentos"
                       onClick={() => setIsOffCanvasOpen(false)}
                     >
-                      Galería
-                    </Link>
-                  </li>
-                  <li className="fondo">
-                    <Link
-                      className="subitem texto-semibold texto-violeta"
-                      to="inscripciones"
-                      onClick={() => setIsOffCanvasOpen(false)}
-                    >
-                      Inscripciones
+                      Documentos
                     </Link>
                   </li>
                 </ul>
               </Link>
 
-              <a>
+              <Link
+                to="practicas-profesionalizantes"
+                onClick={() => setIsOffCanvasOpen(false)}
+              >
+                <li className="container-item-individual texto-semibold">
+                  <BriefcaseIcon />
+                  <p className="texto-violeta">Prácticas Profesionalizantes</p>
+                </li>
+              </Link>
+
+              <Link>
                 <li className="container-item-individual texto-semibold">
                   <BookIcon />
                   <p className="texto-violeta">Plan de estudio</p>
@@ -131,7 +144,7 @@ function BottomNavbar() {
                 <ul className="container-subitems">
                   <li className="fondo">
                     <Link
-                      className="subitem texto-semibold texto-violeta"
+                      className="subitem texto-semibold texto-violeta py-0 pl-4"
                       to="computacion"
                       onClick={() => setIsOffCanvasOpen(false)}
                     >
@@ -140,7 +153,7 @@ function BottomNavbar() {
                   </li>
                   <li className="fondo">
                     <Link
-                      className="subitem texto-semibold texto-violeta"
+                      className="subitem texto-semibold texto-violeta py-0 pl-4"
                       to="gao"
                       onClick={() => setIsOffCanvasOpen(false)}
                     >
@@ -149,7 +162,7 @@ function BottomNavbar() {
                   </li>
                   <li className="fondo">
                     <Link
-                      className="subitem texto-semibold texto-violeta"
+                      className="subitem texto-semibold texto-violeta py-0 pl-4"
                       to="ciclo-basico"
                       onClick={() => setIsOffCanvasOpen(false)}
                     >
@@ -157,7 +170,7 @@ function BottomNavbar() {
                     </Link>
                   </li>
                 </ul>
-              </a>
+              </Link>
             </ul>
           </div>
         </div>

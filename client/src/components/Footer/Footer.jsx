@@ -3,37 +3,10 @@ import styles from './Footer.module.css'
 
 function Footer() {
   return (
-    <footer className= {styles.footerContainer }  >
-      <div className="flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0  ">
-        <div className="grid grid-cols-1 text-sm gap-x-24 gap-y-8 sm:grid-cols-3 justify-items-center ">
-          <div className="space-y-3">
-            <span className="font-semibold text-base uppercase text-gray-50">
-              Principal
-            </span>
-            <ul className="space-y-1">
-              <li>
-                <Link rel="noopener noreferrer" to="/">
-                  Inicio
-                </Link>
-              </li>
-              <li>
-                <Link rel="noopener noreferrer" to="/publicaciones">
-                  Publicaciones
-                </Link>
-              </li>
-              <li>
-                <Link rel="noopener noreferrer" to="/computacion">
-                  Computación
-                </Link>
-              </li>
-              <li>
-                <Link rel="noopener noreferrer" to="/gao">
-                  GAO
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="space-y-3 pt-3">
+    <footer className={styles.footerContainer}>
+      <div className="flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
+        <div className="grid grid-cols-1 text-sm gap-x-24 gap-y-8 sm:grid-cols-3 md:justify-items-center">
+          <div className="space-y-3 py-2">
             <span className="font-semibold text-base uppercase text-gray-50">
               Sobre la escuela
             </span>
@@ -60,11 +33,38 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="space-y-3 pt-4">
+          <div className="space-y-3 py-2">
+            <span className="font-semibold text-base uppercase text-gray-50">
+              Principal
+            </span>
+            <ul className="space-y-1">
+              <li>
+                <Link rel="noopener noreferrer" to="/">
+                  Inicio
+                </Link>
+              </li>
+              <li>
+                <Link rel="noopener noreferrer" to="/publicaciones">
+                  Publicaciones
+                </Link>
+              </li>
+              <li>
+                <Link rel="noopener noreferrer" to="/computacion">
+                  Computación
+                </Link>
+              </li>
+              <li>
+                <Link rel="noopener noreferrer" to="/gao">
+                  GAO
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="space-y-3 py-2">
             <div className="font-semibold text-base uppercase text-gray-50">
               Redes sociales
             </div>
-            <div className="flex md:justify-start sm:justify-center space-x-3">
+            <div className="flex space-x-3">
               <a
                 rel="noopener noreferrer"
                 href="https://www.instagram.com/et7.oficial"

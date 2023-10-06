@@ -87,18 +87,28 @@ h3 {
 
 @media (max-width: 1470px) {
   .grid-container {
-      display: block;
+    display: block;
   }
 
   .sidebar-container {
-      display: none;
+    display: none;
   }
 
   .content-container {
-      margin: 0 auto;
+    margin: 0 auto;
   }
 
   .contenedor-titulo {
-      margin-top: 100px;
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contenedor-titulo {
+    margin-top: 1rem;
+  }
+
+  .titulo-seccion {
+    line-height: 2.5rem;
   }
 }

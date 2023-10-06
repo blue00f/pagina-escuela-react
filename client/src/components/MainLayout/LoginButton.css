@@ -44,3 +44,9 @@
     margin-right: 0.5rem;
   }
 }
+
+@media (max-width: 768px) {
+  .login-a{
+    display: none;
+  }
+}

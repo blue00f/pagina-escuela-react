@@ -148,6 +148,10 @@ td > a:hover {
   visibility: visible !important;
 }
 
+@media (max-width: 1024px) {
+  /*meter responsive para las tablas*/
+}
+
 @media (max-width: 480px) {
   .flex-plan-estudio {
     display: flex;
