@@ -23,3 +23,17 @@
     rgba(26, 0, 65, 1) 100%
   );
 }
+
+@media (max-width: 768px) {
+  .footerContainer {
+    padding: 2rem;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footerContainer {
+    padding: 0;
+    padding: 0;
+  }
+}

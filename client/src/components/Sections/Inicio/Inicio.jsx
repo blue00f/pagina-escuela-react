@@ -89,7 +89,7 @@ function Inicio() {
         </div>
         <div className="flex xl:w-1/2 flex-wrap justify-center items-center my-2">
           <CardInicio
-            titulo={'Preguntas frecuentes'}
+            titulo={'Asesoramiento de inscripciones'}
             descripcion={
               'Accedé acá por si tenés alguna duda acerca de la inscripción de 1er año.'
             }

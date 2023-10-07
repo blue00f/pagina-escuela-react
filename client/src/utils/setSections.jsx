@@ -51,7 +51,7 @@ export const sections = [
   },
   {
     icon: <QuestionIcon />,
-    label: 'Preguntas frecuentes',
+    label: 'Asesoramiento de inscripciones',
     url: 'preguntas-frecuentes',
     hasSubsections: false,
     subsections: [],

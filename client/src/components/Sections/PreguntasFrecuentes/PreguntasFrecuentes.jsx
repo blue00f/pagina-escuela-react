@@ -36,12 +36,6 @@ function PreguntasFrecuentes() {
                   hoja (frente y dorso) del DNI.
                 </li>
                 <li>Fotocopia de la partida de nacimiento.</li>
-                <li>
-                  Junto con algunos otros datos importantes sobre los padres o
-                  tutores. Cualquier tipo de consulta que tenga, puede acercarse
-                  al establecimiento, ubicado en Zavaleta al 204 en Parque
-                  Patricios.
-                </li>
               </ul>
             </div>
             <div className="mb-10">
@@ -92,26 +86,25 @@ function PreguntasFrecuentes() {
                 ¿Que tipos de asignaturas se enseñan en el establecimiento?
               </h3>
               <p className="text-texto-violeta">
-                Las asignaturas que se enseñan pueden ser general, científico
-                tecnológico o de la formación técnica específica. Esta última
-                depende de si la especialidad es Gestión y Administración de las
-                Organizaciones (GAO) o Computación.
+                Las asignaturas que se enseñan pueden ser de tipo general,
+                científico tecnológico o de la formación técnica específica.
+                Esta última depende de si la especialidad es Gestión y
+                Administración de las Organizaciones (GAO) o Computación.
               </p>
               <ul className="pl-8 list-disc text-texto-violeta">
-                <li>General: Historia, Geografía o Inglés.</li>
                 <li>
-                  Científico tecnológico: Tecnología de la representación,
-                  Física o Química.
+                  <span className="font-medium">General: </span>Historia,
+                  Geografía o Inglés.
                 </li>
                 <li>
-                  Formación técnica específica: Base de datos, organización de
-                  computadoras o redes.
+                  <span className="font-medium">Científico tecnológico: </span>
+                  Tecnología de la representación, Física o Química.
                 </li>
                 <li>
-                  Junto con algunos otros datos importantes sobre los padres o
-                  tutores. Cualquier tipo de consulta que tenga, puede acercarse
-                  al establecimiento, ubicado en Zavaleta al 204 en Parque
-                  Patricios.
+                  <span className="font-medium">
+                    Formación técnica específica:
+                  </span>
+                  Base de datos, organización de computadoras o redes.
                 </li>
               </ul>
             </div>
@@ -134,11 +127,11 @@ function PreguntasFrecuentes() {
                 ¿Como son los horarios de entrada y de salida?
               </h3>
               <p className="text-texto-violeta">
-                Cabe aclarar que los horarios de entrada y salida pueden cambiar
-                según el día. Si el/la estudiante es anotado/da en el horario de
-                la mañana, puede cursar entre las 7:30 hs y 12:40 hs y si el/la
-                estudiante es anotado/da en el turno de la tarde, puede cursar
-                entre las 13:00 hs y las 18:40 hs.
+                Los horarios de entrada y salida pueden cambiar según el día. Si
+                el/la estudiante es anotado/da en el horario de la mañana, puede
+                cursar entre las 7:30 hs y 12:40 hs y si el/la estudiante es
+                anotado/da en el turno de la tarde, puede cursar entre las 13:00
+                hs y las 18:40 hs.
               </p>
             </div>
             <div className="mb-10">

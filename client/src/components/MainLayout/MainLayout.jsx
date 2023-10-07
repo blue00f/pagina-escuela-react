@@ -35,7 +35,7 @@ function MainLayout() {
     window.innerWidth <= 1470
   )
   const [isCellResolution, setIsCellResolution] = useState(
-    window.innerWidth <= 480
+    window.innerWidth <= 768
   )
 
   function RenderRedirectToPublicacionesCL({ isLoggedIn }) {
@@ -72,11 +72,9 @@ function MainLayout() {
 
   useEffect(() => {
     window.addEventListener('resize', handleResize)
-    window.addEventListener('resize', handleResize)
-
+    handleResize()
     return () => {
       window.removeEventListener('resize', handleResize)
-      window.addEventListener('resize', handleResize)
     }
   }, [])
 

@@ -103,9 +103,9 @@ h3 {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .contenedor-titulo {
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 
   .titulo-seccion {

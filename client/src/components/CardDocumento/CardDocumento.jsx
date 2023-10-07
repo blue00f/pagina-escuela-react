@@ -5,7 +5,7 @@ function CardDocumento({ link, descripcion }) {
         href={link}
         target="_blank"
         rel="noreferrer"
-        className="block max-w-[18rem] rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700"
+        className="block max-w-[18rem] px-3 my-4 rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
       >
         <div className="relative overflow-hidden bg-cover bg-no-repeat">
           <img

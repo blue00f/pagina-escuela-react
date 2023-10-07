@@ -28,7 +28,7 @@ function Footer() {
               </li>
               <li>
                 <Link rel="noopener noreferrer" to="/preguntas-frecuentes">
-                  Preguntas frecuentes
+                  Asesoramiento de inscripciones
                 </Link>
               </li>
             </ul>
