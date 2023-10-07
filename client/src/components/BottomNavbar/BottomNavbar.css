@@ -80,11 +80,10 @@
 
   .off-canvas {
     top:0;
-    padding-top: 3rem;
-    width: 95%; 
+    padding-top: 2rem;
+    width: 75%; 
     height: 85%;
-    margin-right: 0.75rem;
-
+    margin: 0 auto;
     border-radius: 1.75rem;
     background-color: #fff;
 
