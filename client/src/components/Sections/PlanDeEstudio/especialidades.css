@@ -148,8 +148,19 @@ td > a:hover {
   visibility: visible !important;
 }
 
-@media (max-width: 1024px) {
-  /*meter responsive para las tablas*/
+@media (max-width: 768px) {
+  .flex-plan-estudio {
+    display: block;
+  }
+  .tab-content {
+    margin: 0;
+  }
+}
+
+@media (max-width: 534px) {
+  .head-horas-por-semana {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {

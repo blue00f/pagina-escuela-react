@@ -1,3 +1,6 @@
+import ControladorAnios from './ControladorAnios'
+import TablaMaterias from './TablaMaterias.jsx'
+
 import './especialidades.css'
 
 function CicloBasico() {
@@ -6,30 +9,11 @@ function CicloBasico() {
       <div className="contenedor-titulo">
         <h2 className="titulo-seccion">Ciclo Básico</h2>
       </div>
-
-      <div className="description-1" role="tabpanel">
-        <h3>Trayectoria formativa y cargas horarias</h3>
-      </div>
       <div className="flex-plan-estudio">
         <div className="lista_e_info">
           <div className="list-group" id="myList" role="tablist">
-            <a
-              className="list-group-item list-group-item-action active"
-              data-bs-toggle="list"
-              href="#tabla1"
-              role="tab"
-            >
-              1er año
-            </a>
-
-            <a
-              className="list-group-item list-group-item-action"
-              data-bs-toggle="list"
-              href="#tabla2"
-              role="tab"
-            >
-              2do año
-            </a>
+            <ControladorAnios idTabla={'#tabla1'} anio={'1° Año'} />
+            <ControladorAnios idTabla={'#tabla2'} anio={'2° Año'} />
           </div>
 
           <div className="mas-info">
@@ -38,165 +22,22 @@ function CicloBasico() {
               target="_blank"
               rel="noreferrer"
             >
-              Más información aquí.
+              Clickeá para más información.
             </a>
           </div>
         </div>
 
-        <div className="tab-content" width="720px">
+        <div className="tab-content">
           <div
             className="tab-pane fade show active"
             role="tabpanel"
             id="tabla1"
           >
-            <table width="720px">
-              <thead>
-                <tr>
-                  <th colSpan="4">Primer año</th>
-                </tr>
-                <tr>
-                  <th colSpan="2">Campo de Formación</th>
-                  <th>Unidad Curricular</th>
-                  <th>Hs. por Semana</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th rowSpan="9" colSpan="2">
-                    General
-                  </th>
-                </tr>
-                <tr>
-                  <td>Lengua y Literatura</td>
-                  <td>4hs</td>
-                </tr>
-                <tr>
-                  <td>Inglés</td>
-                  <td>3hs</td>
-                </tr>
-                <tr>
-                  <td>Historia</td>
-                  <td>3hs</td>
-                </tr>
-                <tr>
-                  <td>Geografía</td>
-                  <td>3hs</td>
-                </tr>
-                <tr>
-                  <td>Educación Ciudadana</td>
-                  <td>2hs</td>
-                </tr>
-                <tr>
-                  <td>Educación Artística</td>
-                  <td>2hs</td>
-                </tr>
-                <tr>
-                  <td>Educación Física</td>
-                  <td>3hs</td>
-                </tr>
-                <tr>
-                  <td>Biología</td>
-                  <td>2hs</td>
-                </tr>
-                <tr>
-                  <th rowSpan="3">Científico Tecnológica</th>
-                  <th rowSpan="1">Área de Ciencias Básicas y Matemática</th>
-                  <td>Matemática</td>
-                  <td>6hs</td>
-                </tr>
-                <tr>
-                  <th rowSpan="2">Área de Tecnologías Generales</th>
-                  <td>Tecnología de la Representación</td>
-                  <td>4hs</td>
-                </tr>
-                <tr>
-                  <td>Taller</td>
-                  <td>12hs</td>
-                </tr>
-              </tbody>
-              <tfoot>
-                <tr>
-                  <th colSpan="3">Horas cátedra por semana</th>
-                  <td>44hs</td>
-                </tr>
-              </tfoot>
-            </table>
+            <TablaMaterias especialidad="Ciclo Básico" anio="1° Año" />
           </div>
 
           <div className="tab-pane fade" role="tabpanel" id="tabla2">
-            <table width="720px">
-              <thead>
-                <tr>
-                  <th colSpan="4">Segundo año</th>
-                </tr>
-                <tr>
-                  <th colSpan="2">Campo de Formación</th>
-                  <th>Unidad Curricular</th>
-                  <th>Hs. por Semana</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th rowSpan="8" colSpan="2">
-                    General
-                  </th>
-                </tr>
-                <tr>
-                  <td>Lengua y Literatura</td>
-                  <td>4hs</td>
-                </tr>
-                <tr>
-                  <td>Inglés</td>
-                  <td>3hs</td>
-                </tr>
-                <tr>
-                  <td>Historia</td>
-                  <td>3hs</td>
-                </tr>
-                <tr>
-                  <td>Geografía</td>
-                  <td>3hs</td>
-                </tr>
-                <tr>
-                  <td>Educación Ciudadana</td>
-                  <td>2hs</td>
-                </tr>
-
-                <tr>
-                  <td>Educación Física</td>
-                  <td>3hs</td>
-                </tr>
-                <tr>
-                  <td>Biología</td>
-                  <td>3hs</td>
-                </tr>
-                <tr>
-                  <th rowSpan="4">Científico Tecnológica</th>
-                  <th rowSpan="2">Área de Ciencias Básicas y Matemática</th>
-                  <td>Matemática</td>
-                  <td>6hs</td>
-                </tr>
-                <tr>
-                  <td>Física</td>
-                  <td>4hs</td>
-                </tr>
-                <tr>
-                  <th rowSpan="2">Área de Tecnologías Generales</th>
-                  <td>Tecnología de la Representación</td>
-                  <td>3hs</td>
-                </tr>
-                <tr>
-                  <td>Taller</td>
-                  <td>12hs</td>
-                </tr>
-              </tbody>
-              <tfoot>
-                <tr>
-                  <th colSpan="3">Horas cátedra por semana</th>
-                  <td>46hs</td>
-                </tr>
-              </tfoot>
-            </table>
+            <TablaMaterias especialidad="Ciclo Básico" anio="2° Año" />
           </div>
         </div>
       </div>

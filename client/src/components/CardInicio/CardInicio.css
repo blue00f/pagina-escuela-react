@@ -11,7 +11,7 @@
 
 @media (max-width: 1150px) {
   .contenedor-svg-inicio {
-    padding-top: 2rem;
+    padding: 1rem 0;
   }
 
   .contenedor-card-inicio {

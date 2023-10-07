@@ -58,7 +58,7 @@ function MainLayout() {
   const handleResize = () => {
     const currentWindowWidth = window.innerWidth
 
-    if (currentWindowWidth <= 480) {
+    if (currentWindowWidth <= 768) {
       setIsLaptopResolution(false)
       setIsCellResolution(true)
     } else if (currentWindowWidth <= 1470) {
@@ -93,8 +93,8 @@ function MainLayout() {
 
       <RenderRedirectToPublicacionesCL isLoggedIn={isLoggedIn} />
 
-      {isCellResolution ? <BottomNavbar/> : null}
-       
+      {isCellResolution ? <BottomNavbar /> : null}
+
       <Routes>
         <Route exact path="/" element={<Inicio />} />
         <Route

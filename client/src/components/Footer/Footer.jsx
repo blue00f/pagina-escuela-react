@@ -101,7 +101,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="py-6 text-sm text-center dark:text-gray-400">
+      <div className="py-6 max-2xl:mb-0 max-md:mb-12 text-sm text-center text-gray-400">
         Zavaleta 204, Parque Patricios, CABA
       </div>
     </footer>
