@@ -145,19 +145,19 @@ div:where(.swal2-container) textarea:where(.swal2-textarea):focus {
   }
 
   .descripcion-superior-div {
-    top: 10%;
+    top: 25%;
     left: 5%;
     right: 5%;
   }
 
   .descripcion-inferior-div {
-    left: 5%;
-    right: 5%;
+    display: flex;
+    flex-direction: column;
   }
 
   .descripcion-superior-div h3,
   .descripcion-superior-div p,
   .descripcion-inferior-div p {
-    font-size: 32px;
+    font-size: 1rem;
   }
 }
